@@ -36,6 +36,7 @@ header{
   top: 0; 
   background-color: var(--white);
   width: 100%;
+  z-index: 999;
 }
 header h1{
   font-size: 25px;
@@ -72,12 +73,12 @@ header h1{
 /*여기는 가능하면 손 안댈게요*/
 [class^="content-"]{
   width: 100%;
-  min-width: 320px; 
+  min-width: 320px;  
   max-width: 720px; 
-  height: 100vh; /*임시 높이 작업하면서 상황에 맞게 빼세요*/
   background-color: var(--white);
-  position: fixed; 
+  position: absolute;
   top: 95px;
+  padding-bottom: 150px;
 } 
 [class^="content-"] > .inner{
   width: 100%;
@@ -262,10 +263,10 @@ fieldset p .bi{
 .gnb-list li{
   text-align: center;
   color: #8E95A1;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .gnb-list .bi{
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 .gnb-home{
   width: 55px; 
