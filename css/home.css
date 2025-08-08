@@ -61,7 +61,7 @@ header .head-util{
   border-radius: 50px;
 }
 header .head-util img{
-  width: 30px;
+  width: 35px;
   height: 30px;
 }
 
@@ -72,7 +72,8 @@ header .alert-badge{
   border-radius: 50%;
   font-size: 14px;
   color: var(--white);
-  font-weight: 600;
+  margin: 50px;
+  gap: 8px;
 }
 header .weather-alert{
   display: flex;
