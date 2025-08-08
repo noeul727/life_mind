@@ -225,7 +225,7 @@ fieldset p .bi{
   min-width: 320px; 
   max-width: 720px; 
   width: 100%; height: 93px; 
-  background: url(../images/gnb_ct.png) no-repeat center top;
+  background: url(../images/footer/gnb_ct.png) no-repeat center top;
 }
 .gnb::before, .gnb::after{
   content: ""; 
@@ -237,11 +237,11 @@ fieldset p .bi{
 }
 .gnb::before{
   left: 0; 
-  background: url(../images/gnb_lt.png) no-repeat;
+  background: url(../images/footer/gnb_lt.png) no-repeat;
 }
 .gnb::after{
   right: 0; 
-  background: url(../images/gnb_rt.png) no-repeat;
+  background: url(../images/footer/gnb_rt.png) no-repeat;
 }
 .gnb-list{
   display: flex; 
@@ -253,7 +253,7 @@ fieldset p .bi{
 .gnb-list > div{
   width: calc((100% - 88px) / 2); 
   height: 93px; 
-  background:url(../images/gnb_bg.png) repeat-x center bottom; 
+  background:url(../images/footer/gnb_bg.png) repeat-x center bottom; 
   display: flex; 
   align-items: center; 
   justify-content: center; 
