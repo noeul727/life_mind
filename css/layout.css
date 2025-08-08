@@ -29,7 +29,13 @@
  header 는 공통사항이고, 상황에 맞게 head1, head2, head3 클래스를 사용하세요.
 */
 header{
+  min-width: 320px; 
+  max-width: 720px; 
   height: 95px;
+  position: fixed; 
+  top: 0; 
+  background-color: var(--white);
+  width: 100%;
 }
 header h1{
   font-size: 25px;
@@ -66,11 +72,16 @@ header h1{
 /*여기는 가능하면 손 안댈게요*/
 [class^="content-"]{
   width: 100%;
+  min-width: 320px; 
+  max-width: 720px; 
   height: 100vh; /*임시 높이 작업하면서 상황에 맞게 빼세요*/
   background-color: var(--white);
+  position: fixed; 
+  top: 95px;
 } 
 [class^="content-"] > .inner{
-  padding: 5%;
+  width: 100%;
+  padding: 3% 5%;
 } 
 [class^="content-"] > .inner h2{
   font-size: 2.2rem;
@@ -85,6 +96,7 @@ header h1{
 }
 fieldset{
   margin-bottom: 20px;
+  width: 100%;
 }
 fieldset input[type="text"]{
   width: 100%;
