@@ -41,3 +41,105 @@ p4: 14px M
 인풋 - 18px
 
 */
+
+
+
+/*프로필*/
+[class^="content-mypage-"]{
+  background-color: var(--white);
+  min-height: 100vh;
+}
+.content-mypage-main{
+  background-color: var(--bg-color);
+}
+[class^="content-mypage-"] .sec-profile{
+  margin-bottom : 5%;
+}
+[class^="content-mypage-"] .sec-profile .profile-sh-b, [class^="content-mypage-"] .sec-profile .profile-ka{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
+  width: 100%;
+  height: 120px;
+  background-color: var(--main-1);
+  margin-top: 12px;
+  padding: 2% 5%;
+  border-radius: 15px;
+}
+[class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-img{
+  height: 80px;
+  aspect-ratio: 1 / 1; /* 가로:세로 = 1:1 */
+  border-radius: 50%;
+  background-color: var(--main-6);
+  padding: 3% 3% 4%;
+}
+[class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-img img{
+  width: 100%;
+  height: 100%;
+}
+[class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info{
+  flex: 1;
+  margin-left: 3%;
+}
+[class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info h3{
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--white);
+}
+[class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info h3 span{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--white);
+}
+[class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info p{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--white);
+} 
+[class^="content-mypage-"] .profile-ka .profile-img i{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--main-2);
+}
+/*메인*/
+.content-mypage-main ul{
+  margin-top: 5%;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  padding: 3% 5%;
+}
+.content-mypage-main ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.content-mypage-main ul li h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/*대상자 수정*/
+.content-mypage-sub-02 .sf02 .profile-sh-y{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.content-mypage-sub-02 .sf02 .profile-sh-y .profile-img{
+  height: 160px;
+  aspect-ratio: 1 / 1; /* 가로:세로 = 1:1 */
+  border-radius: 50%;
+  background-color: #FFFDE6;
+  padding: 3% 3% 4%;
+}
+.content-mypage-sub-02 .sf02 .profile-sh-y .profile-img img{
+  width: 100%;
+  height: 100%;
+} 
