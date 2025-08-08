@@ -59,26 +59,39 @@
       </div><!--.inner-->
     </header>
 
-    <div class="content-layout03">
+    <div class="content-layout-03">
       <div class="inner">
         <form>
-          <fieldset>
-            <legend>인풋박스</legend>
-            <div class="input-box-01">
-              <h2>인풋 타이틀</h2>
-              <input type="text" placeholder="이름을 입역해주세요">
+          <fieldset class="field01">
+            <legend>인풋박스 기본</legend>
+            <div>
+              <h2>이름</h2>
+              <input type="text" placeholder="이름을 입력해주세요">
+              <p><i class="bi bi-exclamation-circle"></i>4~12자 영문 소문자, 숫자 조합</p>
             </div>
-            <div class="input-box-02">
-              <h2>인풋 타이틀</h2>
+          </fieldset>
+          <fieldset class="field02">
+            <legend>인풋박스 아이콘 추가</legend>
+            <div>
+              <h2>이름</h2>
+              <input type="text" placeholder="이름을 입력해주세요">
+            </div>
+           </fieldset>
+          <fieldset class="field03">
+            <legend>인풋박스 아이디</legend>  
+            <div>
+              <h2>아이디</h2>
               <div class="input-btn">
-                <input type="text" placeholder="이름을 입역해주세요">
-                <button type="button">확인</button>
+                <input type="text" placeholder="아이디을 입력해주세요">
+                <button type="button" class="btn-submit">중복확인</button>
               </div>
               
             </div>
             
             
           </fieldset>
+
+          <button type="button" class="btn-big-01">확인</button>
         </form>
 
       </div><!--.inner-->

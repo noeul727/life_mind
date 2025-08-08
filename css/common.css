@@ -46,7 +46,7 @@ body{
   font-family: var(--main-font);
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #333;
+  color: var(--grayscale-2);
 }
 #wrap{
   min-width: 320px;
