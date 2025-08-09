@@ -12,6 +12,9 @@ $(document).ready(function(){//start
         input.focus();
       }
     });
+    //modal-wrap 사라짐
+
+    
   });
   
 });//end

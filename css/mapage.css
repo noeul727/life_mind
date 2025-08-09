@@ -163,6 +163,7 @@ p4: 14px M
   padding: 3% 5%;  
   border-radius: 12px;
   height: 48px;
+  cursor: pointer;
 }
 .content-mypage-sub-02 .field05 ul li h4{
   font-size: 1.8rem;
@@ -182,4 +183,3 @@ p4: 14px M
   gap: 8px;
   margin-top: 8px;
 }
-
