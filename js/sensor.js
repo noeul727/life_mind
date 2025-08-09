@@ -19,5 +19,22 @@ $(document).ready(function(){//start
   });
 
 
+  // 센서 - 더보기
+  $(".more-menu").hide();
+
+  $(".sensor-more").click(function(event){
+    event.stopPropagation();
+    $(".more-menu").fadeToggle();
+  });
+
+  $(document).click(function(){
+    $(".more-menu").fadeOut();
+  });
+
+  $(".more-menu").click(function(event){
+    event.stopPropagation();
+  });
+
+ 
 
 });//end
