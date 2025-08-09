@@ -417,3 +417,25 @@ p4: 14px M
   object-fit: cover;
   width: 100%;
 }
+
+
+
+/* cont-sensor-02 */
+
+.sensor-device-setting .inner{
+  box-shadow: none;
+  border: none;
+}
+.head3 ul li:first-child{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cont-sensor-02 {
+  padding-top: 130px;
+}
+.cont-sensor-02 h3{
+  font-size: 2.2rem;
+
+}
