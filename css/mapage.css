@@ -49,7 +49,7 @@ p4: 14px M
   background-color: var(--white);
   min-height: 100vh;
 }
-.content-mypage-main{
+.content-mypage-main, .content-mypage-sub-01{
   background-color: var(--bg-color);
 }
 [class^="content-mypage-"] .sec-profile{
@@ -222,4 +222,68 @@ p4: 14px M
 
 
 /*구독권 관리*/
-.content-mypage-03 .
+.content-mypage-03{
+  background-color: var(--bg-color);
+}
+.content-mypage-03 .subscription-box-01{
+  width: 100%;
+  background-color: var(--white);
+  padding: 36px 0;
+  text-align: center;
+  margin: 8px 0 20px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+}
+.content-mypage-03 .subscription-box-01 h3{
+  color: var(--grayscale-6);
+}
+.content-mypage-03 .plus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.content-mypage-03 .modal-box{
+  height: 300px;
+}
+.content-mypage-03 .modal-box h4{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+/*구독권 확인 창*/
+.subscription03 .modal-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscription03 .modal-box{
+  width: 360px;
+  border-radius: 20px;
+  padding-top: 40px;
+}
+.subscription03 .modal-box h5{
+  margin: 20px 0 40px;
+  font-size: 1.8rem;
+}
+/*구독권 등록 후*/
+.subscription05 .subscription-box-01{
+  padding: 24px 28px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscription05 .subscription-box-01 p{
+  margin-top: 8px;
+  font-weight: 500;
+  color: var(--grayscale-4);
+}
+.subscription05 .subscription-box-01 .subscrip-btn{
+  background-color: var(--main-5);
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--mainfont-color);
+}

@@ -3,7 +3,7 @@ $(document).ready(function(){//start
 
 
   //modal-wrap 사라짐
-  $(".modal-wrap").hide();
+//  $(".modal-wrap").hide();
   $(".content-mypage-sub-02 .field05 ul li.choice-year").click(function(){
     $(".modal-wrap").fadeIn();
   });
