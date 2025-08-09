@@ -49,7 +49,7 @@ p4: 14px M
   background-color: var(--white);
   min-height: 100vh;
 }
-.content-mypage-main{
+.content-mypage-main, .content-mypage-sub-01{
   background-color: var(--bg-color);
 }
 [class^="content-mypage-"] .sec-profile{
