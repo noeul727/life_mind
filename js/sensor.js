@@ -83,6 +83,37 @@ $(document).ready(function(){//start
   });
 
 
+  $(".sensor-find").hide();
+  $(".cont-sensor-03 .btn-big-01").click(function(){
+    $(".sensor-find").fadeIn(200);
+  });
+
+  $(".cont-sensor-03 .btn-mid-02").click(function(){
+    $(".sensor-find").fadeOut();
+  });
+
+  $(".sensor-wifi").hide();
+  $(".sensor-chowifi").click(function() {
+    $(".sensor-chowifi").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $(".sensor-find .btn-mid-02").click(function(){
+    $(".sensor-wifi").fadeIn();
+     $(".sensor-find").hide();
+  });
+
+  $(".sensor-wifi-modal").hide();
+
+  $(".sensor-wifi .btn-big-01").click(function(){
+    $(".sensor-wifi-box").hide();
+    $(".sensor-wifi-modal").fadeIn();
+    $(".sensor-find").hide();
+  });
+
+
+  
+
   
   
 
