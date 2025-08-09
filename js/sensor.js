@@ -35,6 +35,31 @@ $(document).ready(function(){//start
     event.stopPropagation();
   });
 
- 
+
+  // 센서 검색창
+  $(".sensor-search-page").hide();
+
+  $(".sensor-search-page-top a").click(function(){
+    $(".sensor-search-page").fadeOut();
+  });
+  $(".sensor-search").click(function(){
+    $(".sensor-search-page").fadeIn();
+  });
+
+  $(".sensor-search-keyboard").hide();
+  $(".sensor-search-page-top input").click(function(){
+    $(".sensor-search-keyboard").fadeIn(200);
+  });
+
+  // 키보드 닫힘 (키보드 눌려도 닫힘 주의)
+  $(".sensor-search-page-top input").click(e => {
+    e.stopPropagation();
+  $(".sensor-search-keyboard").fadeIn(200);
+  });
+
+  $(document).click(() => {
+    $(".sensor-search-keyboard").fadeOut(200);
+  });
+  
 
 });//end
