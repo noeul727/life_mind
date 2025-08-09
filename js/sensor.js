@@ -60,6 +60,30 @@ $(document).ready(function(){//start
   $(document).click(() => {
     $(".sensor-search-keyboard").fadeOut(200);
   });
+
+
+  // 장소 등록
+  $(".sensor02-keyboard-place").hide();
+
+  $(".cont-sensor-02 input").click(function(e){
+    e.stopPropagation(); // 클릭 전파 방지
+    $(".sensor02-keyboard-place").fadeIn(200);
+    $(".btn-place-button").animate({ bottom: "300px" }, 200);
+  });
+
+  // 화면 아무데나 클릭 시
+  $(document).click(function(){
+    $(".sensor02-keyboard-place").fadeOut(200);
+    $(".btn-place-button").animate({ bottom: "0" }, 200);
+  });
+
+  // keyboard나 버튼 클릭 시 닫히지 않게
+  $(".sensor02-keyboard-place, .btn-place-button").click(function(e){
+    e.stopPropagation();
+  });
+
+
+  
   
 
 });//end
