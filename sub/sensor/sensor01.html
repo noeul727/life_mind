@@ -23,7 +23,7 @@
    <meta property="og:image" content="images/common/og_img.jpg">
    <meta property="og:type" content="website">
    <meta property="og:description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
-  <title>MYPAGE</title>
+  <title>기기관리</title>
   <!--파비콘-->
   <link rel="icon" href="">
   <!--폰트-->
@@ -37,15 +37,552 @@
   <link rel="stylesheet" href="../../css/common.css">
   <link rel="stylesheet" href="../../css/layout.css">
   <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/sensor.css">
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   <script src="../../js/aos.js"></script>
-  <script src="../../js/layout.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/sensor.js"></script>
 
 </head>
 <body>
-  
+  <div id="wrap">
+    <header class="header head3">
+      <div class="inner">
+        <ul>
+          <li><h1>기기관리</h1></li>
+          <li class="head-util">
+            <div class="sensor-search"><a href="#"><img src="../../images/sensor/sensor-search-tit.svg" alt="기기 검색"></a></div>
+            <div class="sensor-more"><a href="#"><img src="../../images/sensor/sensor-dots.svg" alt="기기 더보기"></a></div>
+          </li>
+        </ul>
+
+        <div class="tab-menu">
+          <div class="tab active">전체</div>
+          <div class="tab">현관</div>
+          <div class="tab">주방</div>
+          <div class="tab ">화장실</div>
+          <div class="tab">응급벨</div>
+        </div>
+      </div><!--.inner-->
+    </header>
+
+    <div class="more-menu">
+      <ul>
+        <li><a href="#">장소 등록</a></li>
+        <li><a href="#">기기 등록</a></li>
+        <li><a href="#">장소 편집</a></li>
+        <li><a href="#">허브 등록</a></li>
+      </ul>
+    </div><!-- sensor-moretab -->
+
+    <div class="cont-sensor">
+
+      <div class="hub">
+        <div class="inner">
+
+          <div class="hub-connect">
+            <p>허브 연결중</p>
+            <span>2025.07.29(화) 설치</span>
+            <i class="bi bi-projector-fill"></i>
+          </div>
+
+          <div class="hub-plus">
+            <p>허브 등록</p>
+            <img src="../../images/sensor/sensor-hub-plus.svg" alt="">
+          </div>
+          
+        </div>
+
+      </div><!-- hub -->
+        
+      <div class="inner">
+        
+
+        <div class="tab-con">
+          <ul>
+            <li class="all">
+              <div>
+                <p class="dev-stat">잠김</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-refri-icon.svg" alt="냉장고 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">주방</p>
+                    <p class="device-main">냉장고<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">98%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">00158d0008453201
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+              
+              <div>
+                <p class="dev-stat stat-color">열림</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-door-close.svg" alt="현관문 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">현관</p>
+                    <p class="device-main">문<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">90%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">01258d0558253202
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+              <div>
+                <p class="dev-stat">잠김</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-gas.svg" alt="가스레인지 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">주방</p>
+                    <p class="device-main">가스레인지<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">95%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">20108a0008993201
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+              <div>
+                <p class="dev-stat">잠김</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-toil.svg" alt="화장실 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">화장실</p>
+                    <p class="device-main">문<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">81%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">58898b0008253206
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+              <div>
+                <p class="dev-stat stat-color">작동</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-bellicon.svg" alt="응급벨 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">응급 벨</p>
+                    <p class="device-main">응급 호출<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">99%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">88258w0127653208
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+            </li><!-- 전체 -->
+
+
+
+            <li class="door">
+              <div>
+                <p class="dev-stat stat-color">열림</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-door-close.svg" alt="현관문 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">현관</p>
+                    <p class="device-main">문<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">90%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">01258d0558253202
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+            </li><!-- 현관 -->
+
+
+
+            <li class="kitchen">
+              
+              <div>
+                <p class="dev-stat">잠김</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-refri-icon.svg" alt="냉장고 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">주방</p>
+                    <p class="device-main">냉장고<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">98%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">00158d0008453201
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+              <div>
+                <p class="dev-stat">잠김</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-gas.svg" alt="가스레인지 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">주방</p>
+                    <p class="device-main">가스레인지<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">95%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">20108a0008993201
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+            </li><!-- 주방 -->
+
+
+
+            <li class="toilet">
+              
+              <div>
+                <p class="dev-stat">잠김</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-toil.svg" alt="화장실 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">화장실</p>
+                    <p class="device-main">문<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">81%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">58898b0008253206
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+            </li><!-- 화장실 -->
+
+
+
+            <li class="bell">
+              <div>
+                <p class="dev-stat stat-color">작동</p>
+                <div class="device-tit">
+                  <div class="device-icon">
+                    <img src="../../images/sensor/sensor-bellicon.svg" alt="응급벨 센서">
+                  </div>
+                  <div class="device-text">
+                    <p class="device-sub">응급 벨</p>
+                    <p class="device-main">응급 호출<i class="bi bi-pencil-square"></i></p>
+                  </div>
+                </div>
+
+                <div class="device-bottom">
+                  <div class="dev-elec">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-elec.svg" alt="배터리잔량">
+                      <p>배터리</p>
+                    </div>
+                    <p class="de-tit">99%</p>
+                  </div>
+
+                  <div class="dev-id">
+                    <div class="elec-sub">
+                      <img src="../../images/sensor/sensor-idcard.svg" alt="ID">
+                      <p>ID</p>
+                    </div>
+                    <p class="de-tit">88258w0127653208
+                      <img src="../../images/sensor/sensor-copy.svg" alt="아이디 복사하기">
+                    </p>
+                  </div>
+                  
+                </div>
+                <div class="btn-midbox">
+                  <button type="button" class="btn-mid-01">제거</button>
+                  <button type="button" class="btn-mid-02">위치 변경</button>
+                </div>
+
+              </div>
+
+            </li><!-- 응급벨 -->
+          </ul>
+
+        </div><!-- tab con -->
+
+      </div><!--.inner-->
+
+
+      <div class="sensor-search-page">
+        <div class="inner">
+
+          <div class="sensor-search-page-top">
+            <fieldset class="field02">
+              <legend>인풋박스 아이콘 추가</legend>
+              <div class="input-icon">
+                <input type="text" placeholder="검색어를 입력해주세요.">
+                <span><img src="../../images/x_gray.svg" alt="아이콘"></span>
+              </div>
+            </fieldset>
+
+            <a href="#">
+              닫기
+            </a>
+          </div>
+
+          <div class="sensor-search-history">
+            <h2>최근 검색어</h2>
+            <ul>
+              <li><p>냉장고</p><img src="../../images/sensor/sensor-close-searchpage.svg" alt=""></li>
+              <li><p>현관</p><img src="../../images/sensor/sensor-close-searchpage.svg" alt=""></li>
+              <li><p>가스레인지</p><img src="../../images/sensor/sensor-close-searchpage.svg" alt=""></li>
+            </ul>
+          </div>
+
+        </div><!-- inner -->
+
+        <div class="sensor-search-keyboard">
+          <img src="../../images/sensor/sensor-key.png" alt="키보드">
+        </div>
+      </div><!-- 검색창 -->
+
+      
+
+    </div><!--.cont-sensor-->
+
+    <footer class="gnb">
+      <div class="gnb-list">
+        <div>
+          <a href="#">
+            <ul>
+              <li><i class="bi bi-projector-fill"></i></li>   
+              <li>기기관리</li>          
+            </ul>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <ul>
+              <li><i class="bi bi-person-fill"></i></li>   
+              <li>마이페이지</li>          
+            </ul>
+          </a>
+        </div>
+      </div>
+      <div class="gnb-home">
+        <a href="#"><i class="bi bi-house-door-fill"></i></a>
+      </div>
+    </footer>
+  </div><!--#wrap-->
 </body>
 </html>
