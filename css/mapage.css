@@ -234,6 +234,9 @@ p4: 14px M
   border-radius: 12px;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
 }
+.content-mypage-03 .subscription-box-01 h3{
+  color: var(--grayscale-6);
+}
 .content-mypage-03 .plus{
   display: flex;
   align-items: center;
@@ -263,4 +266,24 @@ p4: 14px M
 .subscription03 .modal-box h5{
   margin: 20px 0 40px;
   font-size: 1.8rem;
+}
+/*구독권 등록 후*/
+.subscription05 .subscription-box-01{
+  padding: 24px 28px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscription05 .subscription-box-01 p{
+  margin-top: 8px;
+  font-weight: 500;
+  color: var(--grayscale-4);
+}
+.subscription05 .subscription-box-01 .subscrip-btn{
+  background-color: var(--main-5);
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--mainfont-color);
 }
