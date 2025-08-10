@@ -237,7 +237,7 @@ p4: 14px M
 .content-mypage-03 .subscription-box-01 h3{
   color: var(--grayscale-6);
 }
-.content-mypage-03 .plus{
+[class^="content-mypage-"] .plus{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,4 +286,70 @@ p4: 14px M
   border-radius: 8px;
   font-weight: 600;
   color: var(--mainfont-color);
+}
+
+/*생활알림*/
+.routine .routine-menu ul{
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+.routine .routine-menu ul li{
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  background-color: var(--grayscale-9);
+  color: var(--grayscale-3);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.routine .routine-menu ul li.active{
+  background-color: var(--main-1);
+  color: var(--white);
+}
+
+.routine .routine-content-item > li{
+  margin: 20px 0;
+}
+.routine .routine-content-item > li a{
+  display: block;
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+.routine .routine-content-item .alert-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.routine .routine-content-item .alert-text > img{
+  height: 40px;
+}
+.routine .routine-content-item .alert-text-left{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.routine .routine-content-item h4{
+  font-size: 2.2rem;
+}
+.routine .routine-content-item .btn-time{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+.routine .routine-content-item .btn-time li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--mainfont-color);
+  border: 2px solid var(--main-1);
+  padding: 4px 12px;
 }
