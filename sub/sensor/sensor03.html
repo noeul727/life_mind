@@ -23,7 +23,7 @@
    <meta property="og:image" content="images/common/og_img.jpg">
    <meta property="og:type" content="website">
    <meta property="og:description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
-  <title>구독권 관리</title>
+  <title>기기관리</title>
   <!--파비콘-->
   <link rel="icon" href="">
   <!--폰트-->
@@ -36,59 +36,74 @@
   <link rel="stylesheet" href="../../css/aos.css">
   <link rel="stylesheet" href="../../css/common.css">
   <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/mapage.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/sensor.css">
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   <script src="../../js/aos.js"></script>
-  <script src="../../js/layout.js"></script>
-  <script src="../../js/mypage.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/sensor.js"></script>
+
 </head>
 <body>
- <div id="wrap">
-   <header class="header head1">
+  <div id="wrap">
+    <header class="header head3 sensor-device-setting">
       <div class="inner">
         <ul>
-          <li><a href="#"><img src="../../images/arrow/tit-arrow.svg" alt="뒤로가기"></a></li>
-          <li><h1>구독권 관리</h1></li>
+          <li><a href="sensor01.html"><img src="../../images/sensor/sensor-tit-back.svg" alt="뒤로가기"></a><h1>기기관리</h1></li>
+          <li class="head-util">
+            <div class="sensor-search"><a href="#"><img src="../../images/sensor/sensor-search-tit.svg" alt="기기 검색"></a></div>
+            <div class="sensor-more"><a href="#"><img src="../../images/sensor/sensor-dots.svg" alt="기기 더보기"></a></div>
+          </li>
         </ul>
-      </div><!--.inner-->
+
+         </div>
     </header>
 
-    <div class="content-mypage-03 subscription01">
+
+
+    <div class="cont-sensor-03">
       <div class="inner">
-        <div class="subscription-wrap">
-          <h2>내 구독권</h2>
-          <div class="subscription-box-01">
-            <h3>등록된 구독권이 없습니다.</h3>
-          </div>
-          <button type="button" class="btn-big-01 plus"><img src="../../images/plus-circle-plus-w.svg" alt="플러스">구독권 등록하기</button>
-        </div><!--.subscription-->
+        <h3>기기 등록</h3>
 
-      </div><!--.inner-->
-      <div class="modal-wrap">
-        <div class="modal-box">
-          <div class="modal-inner">
-            <h4>구독권 번호 입력</h4>
-            <form>
-              <fieldset class="field01">
-                <legend>인풋박스 기본</legend>
-                <div>
-                  <input type="text" placeholder="구독권 번호를 입력해주세요.">
-                </div>
-              </fieldset>
-            </form>
-            <button type="button" class="btn-big-01">등록</button>
-            
-          </div><!--.modal-inner-->
-          <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
+        <img class="dev-ill" src="../../images/sensor/sensor-dev.png" alt="기기등록 안내 이미지">
+
+        <div class="sensor-guide">
+          <p class="sensor-num">1</p>
+          <p class="sensor-g-txt">
+            <strong>제품 측면</strong>에 위치한 <strong>작은 버튼</strong>을<br> LED가 뜰 때까지 길게 눌렀다 떼주세요.
+          </p>
         </div>
-      </div><!--.modal-wrap-->
-  
-        
-    </div><!--.cont-layout-->
 
+        <div class="sensor-guide">
+          <p class="sensor-num">2</p>
+          <p class="sensor-g-txt">
+            LED가 빠르게 깜빡거리면 화면 아래의 ‘<strong>센서검색</strong>’ 버튼을 눌러주세요.
+          </p>
+        </div>
+
+        <p class="sensor-led"><i class="bi bi-exclamation-circle"></i>LED가 빠르게 깜빡거리지 않는다면 15초 이상 누른 후<br>떼보시길 바랍니다.</p>
+       
+        <button type="button" class="btn-big-01">센서 검색</button>
+      </div><!--.inner-->
+
+      <div class="sensor-find">
+        <div class="sensor-find-box">
+          <div class="inner">
+            <p>라이프 마인드에서 근처에 있는 기기를<br> 찾아 연결 허용하시겠습니까?</p>
+            <div class="btn-midbox">
+              <button type="button" class="btn-mid-01">허용 안함</button>
+              <button onclick="location.href='sensor01.html'" type="button" class="btn-mid-02">허용</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!--.cont-sensor-->
+
+    
   </div><!--#wrap-->
 </body>
-</html> 
+</html>
