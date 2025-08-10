@@ -42,14 +42,6 @@ p4: 14px M
 
 */
 
-/* 하단바 */
-.bi-projector-fill{
-  color: var(--main-1);
-}
-.gnb-list > div:first-child ul li:last-child {
-  color: var(--grayscale-4);
-}
-
 header{
   background-color: var(--main-1);
   border-radius: 0 0 15px 15px;
@@ -97,12 +89,52 @@ header .alert-badge span{
 header .weather-alert{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   font-size: 20px;
   color: var(--white);
-  padding: 15px;
-
+  padding: 25px;
 }
 header .weather-alert img{
   width: 100px;
+}
+
+.content-healthscore{
+  background: #F6FAFD;
+}
+.content-healthscore .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.content-healthscore a{
+  color: #888;
+  text-decoration: none;
+}
+
+
+.monthlyscore p{
+  background: var(--white);
+  border-radius: 15%;
+  font-size: 16px;
+}
+.monthlyscore .score{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monthlyscore .warning{
+  width: 16px;
+}
+.monthlyscore .desc .down {
+  color: red;
+}
+
+.monthlyscore .stats {
+  justify-content: center;
 }
