@@ -309,15 +309,19 @@ p4: 14px M
   background-color: var(--main-1);
   color: var(--white);
 }
-
+.routine .routine-content-item{
+  margin-bottom: 60px;
+}
 .routine .routine-content-item > li{
   margin: 20px 0;
+  
 }
 .routine .routine-content-item > li a{
   display: block;
   background-color: var(--white);
   border-radius: 16px;
   padding: 24px 28px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
 }
 .routine .routine-content-item .alert-text{
   display: flex;
