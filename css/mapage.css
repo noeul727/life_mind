@@ -106,7 +106,10 @@ p4: 14px M
   font-size: 5rem;
   color: var(--main-2);
 }
-
+[class^="content-mypage-"] .back{
+  margin-top: 60px;
+  cursor: pointer;
+}
 .f-mypage .gnb-list .f-mypage-ul li{
   color: var(--main-1);
 }
@@ -163,7 +166,7 @@ p4: 14px M
 .content-mypage-sub-02 .field05 .choice-box > div{
   width: 100%;
   gap: 16px;
-  align-items: center;
+  align-items: space-between;
   border: 1px ;
   height: 48px;
   cursor: pointer;
@@ -175,13 +178,14 @@ p4: 14px M
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 8px;
   font-size: 1.8rem;
   font-weight: 600;   
   color: var(--grayscale-3);
   border-radius: 12px;
   border: 2px solid var(--main-1);
+  padding: 0 16px;
 }
 .content-mypage-sub-02 .field05 .choice-box .field05-right{
   display: flex;
@@ -424,6 +428,9 @@ p4: 14px M
 
 
 /*일정 등록*/
+.registration .field02 .input-icon span.id-icon{
+  top: 80%;
+}
 .registration .alert-set .btn-time-box{
   display: flex;
   justify-content: space-between;
@@ -488,3 +495,55 @@ p4: 14px M
   font-size: 1.8rem;
   padding: 16px 0;
 } 
+
+/*등록 확인 창*/
+.registration .modal-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registration .modal-box{
+  width: 360px;
+  border-radius: 20px;
+  padding-top: 40px;
+  height: auto;
+}
+.registration .modal-box h5{
+  margin: 20px 0 40px;
+  font-size: 1.8rem;
+}
+
+
+/*specific-cal*/
+
+.field07 input[type="radio"]{
+  appearance: none;
+}
+.field07 ul{
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.field07 ul li{
+  flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--grayscale-3);
+  border-radius: 12px;
+  padding: 16px 6px;
+  background-color: var(--grayscale-9);
+  cursor: pointer;
+}
+.field07 label{
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: var(--grayscale-9);
+}
+.field07 input[type="radio"]:checked + label{
+  background-color: var(--main-1);
+  color: #fff;
+  transition: all 0.5s;
+}

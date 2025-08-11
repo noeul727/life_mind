@@ -32,4 +32,28 @@ $(document).ready(function(){//start
       let aa = $(this).index();
       $(".routine .routine-content-list > li").eq(aa).show().siblings().hide();
      });
+
+
+
+
+/*일정 등록 */
+     $(".registration .registration-content-list > li").hide();
+      
+      //첫번째 .routine-menu의 li의 active
+      //첫번째 .img의 li만 나오게
+      $(".registration .registration-menu li").eq(0).addClass("active");
+      $(".registration .registration-content-list > li").eq(0).show();
+
+
+      
+      /*.menu li을 클릭하면 다음과 같은 일이 일어남
+      1. 사용자가 선택한 .tab-btn li에 active 클래스를 추가하고 나머지는  active 클래스를 없앰
+      2. 사용자가 선택한 .tab-btn li의 순서를 알아야함(순서를 가져오는 함수 index 함수)
+      3. .tab-cont li의 순번과 동일한 애는 나오고 나머지는 숨김
+      */
+     $(".registration .registration-menu li").click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      let aa = $(this).index();
+      $(".registration .registration-content-list > li").eq(aa).show().siblings().hide();
+     });
 });//end

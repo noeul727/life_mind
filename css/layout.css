@@ -125,6 +125,36 @@ fieldset p .bi{
   margin-right: 4px;
 }
 /*체크박스*/
+input[type="checkbox"]{
+  appearance: none;
+}
+input[type="checkbox"] + label::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/mypage/icon-check-gray.svg) no-repeat center;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -10%;;
+} 
+input[type="checkbox"]:checked + label::before{
+  background: url(../images/mypage/icon-check-blue.svg) no-repeat center;
+}
+input[type="checkbox"] + label{
+  position: relative;
+  padding: 0 28px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: var(--grayscale-5);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+input[type="checkbox"]:checked + label{
+  color: var(--main-1);
+}
 /*아이콘이 있는 인풋*/
 .field02 .input-icon{
   position: relative;
