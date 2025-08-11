@@ -14,7 +14,11 @@ $(document).ready(function(){//start
     });
     //modal-wrap 사라짐
 
-    
+    $(".gnb .gnb-list ul").click(function(){
+       $(".gnb .gnb-list ul").removeClass("active"); // 전체 제거
+       $(this).addClass("active");                    // 클릭한 요소만 추가
+      
+    });
   });
   
 });//end

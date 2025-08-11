@@ -106,6 +106,13 @@ p4: 14px M
   font-size: 5rem;
   color: var(--main-2);
 }
+
+.f-mypage .gnb-list .f-mypage-ul li{
+  color: var(--mainfont-color);
+}
+.f-mypage .gnb-list .f-mypage-ul .bi{
+  color: var(--mainfont-color);
+}
 /*메인*/
 .content-mypage-main ul{
   margin-top: 5%;
@@ -357,3 +364,42 @@ p4: 14px M
   border: 2px solid var(--main-1);
   padding: 4px 12px;
 }
+
+
+/*생활알림*/
+.cycle .cycle-menu ul{
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin: 8px 0 12px;
+}
+.cycle .cycle-menu ul li{
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  background-color: var(--grayscale-9);
+  color: var(--grayscale-3);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.cycle .cycle-menu ul li.active{
+  background-color: var(--main-1);
+  color: var(--white);
+}
+.cycle .field05 ul{
+  margin-bottom: 12px;
+}
+.cycle .field05 p{
+  font-size: 1.8rem;
+  color: var(--grayscale-6);
+}
+.cycle .field05 .bi{
+  font-size: 1.6rem;
+  color: var(--grayscale-7);
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+
