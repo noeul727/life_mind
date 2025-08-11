@@ -2,12 +2,12 @@ $(document).ready(function(){//start
 
   //탭메뉴
   //첫번째 탭 빼고 숨기기
-  $(".tab-con ul li").not(":first").hide();
+  $(".tab-con > ul > li").not(":first").hide();
 
   $(".tab-menu div").click(function(){
     $(this).addClass("active").siblings().removeClass("active");
     let aa = $(this).index();
-    $(".tab-con ul li").eq(aa).fadeIn().siblings().hide();
+    $(".tab-con > ul > li").eq(aa).fadeIn().siblings().hide();
   });
 
 
@@ -39,7 +39,7 @@ if(hash) {
   if(targetTab.length) {
     targetTab.addClass("active").siblings().removeClass("active");
     let index = targetTab.index();
-    $(".tab-con ul li").eq(index).fadeIn().siblings().hide();
+    $(".tab-con > ul > li").eq(index).fadeIn().siblings().hide();
   }
 }
 

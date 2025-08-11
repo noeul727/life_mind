@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  검색엔진 최적화(SEO)를 위한 메타태그
+  메타요소는 HTML의 head 요소 안에 포함시킬 수 있음
+  일반적인 마크업과는 별개로 페이지에 관련된 정보를 지정하는 데 사용됨
+  검색엔진 최적화가 관련이 있음
+  -->
+  <meta name="keywords" content="오설록">
+  <meta name="description" content="차와 제주가 선사하는 가치 있는 쉼, 오설록">
+  <!-- 오픈그래프 open graph
+   콘텐츠의 요약 내용이 sns에 개시되는데 최적화된 데이터를 가지고 갈 수 있도록 설정하는 것
+   사용자가 클릭 하기 전에 크롤러가 해당 웹사이트를 방문하여
+   HTML의 head의 메타데이터를 크롤링하여 미리보기 화면을 생성해 준다
+   이미지의 경우 최소한 600*315픽셀은 되어야 하며,
+   1200*630 크기를 권장
+  -->
+   <meta property="og:title" content="라이프마인드">
+   <meta property="og:url" content="https://min-space.github.io/osulloc/index.html">
+   <meta property="og:image" content="images/common/og_img.jpg">
+   <meta property="og:type" content="website">
+   <meta property="og:description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
+  <title>기기관리</title>
+  <!--파비콘-->
+  <link rel="icon" href="">
+  <!--폰트-->
+  <link rel="stylesheet" href="../../css/font.css">
+  <!--부트스트랩-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--css-->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/aos.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/health.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="../../js/aos.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/alarm.js"></script>
+  <script src="../../js/health.js"></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <header class="header head3">
+      <div class="inner">
+        <ul>
+          <li><a href="../../index.html"><img src="../../images/sensor/sensor-tit-back.svg" alt="뒤로가기"></a><h1>알림</h1></li>
+          
+        </ul>
+
+        <div class="tab-menu">
+          <div class="tab active">월간</div>
+          <div class="tab" id="alarmsensortab">주간</div>
+          <div class="tab">일간</div>
+        </div>
+      </div><!--.inner-->
+    </header>
+
+    <div class="cont-alarm">
+
+        <div class="tab-con">
+          <ul>
+            <li class="alarm-all">
+              <div class="analysis">
+                <h2 class="health-tit">종합분석</h2>
+                <div class="summary-cont">
+                <ul class="summary-tit">
+                  <li><img src="../../images/health/diagnosis_icon.png" alt="건강종합분석요약icon"></li>
+                  <li>건강 종합 분석 요약</li>
+                </ul>
+                <p>해당 내용은 건강 상태에 대한 간단한 분석이며, <br> 보다 <span>정확한 진단은 의료기관을 통해</span> 확인하세요!</p>
+                </div><!--.summary-cont-->
+
+                <div class="summary-cont2">
+                  <ul class="summary-cont2_icons">
+                    <li>
+                      <div class="summary-cont2_icon"><img src="../../images/health/heart_icon.png" alt="심박icon"></div>
+                      <p>심박이 느려요</p>
+                    </li>
+
+                    <li>
+                      <div class="summary-cont2_icon"><img src="../../images/health/lung_icon.png" alt="호흡icon"></div>
+                      <p>심박이 느려요</p>
+                    </li>
+
+                    <li>
+                      <div class="summary-cont2_icon"><img src="../../images/health/fall.png" alt="낙상icon"></div>
+                      <p>심박이 느려요</p>
+                    </li>
+                  </ul>
+
+                  <div class="summary-cont2-p">
+                    <div class="check-icon"><img src="../../images/health/check.png" alt="체크버튼아이콘"></div>
+                    <p>호흡은 정상이나 심박수는 낮습니다. <br> 지속적인 어지러움이 있으면 내원이 필요합니다.</p>
+                  </div><!--.summary-cont2-p-->
+                </div><!--..summary-cont2-->
+              </div><!--.analysis-->
+
+              <div class="figures">
+                <div class="figures-wrap">
+
+                  <h2 class="health-tit">상세 수치</h2>
+                  <ul class="figures-box">
+
+                    <li>
+                      <div class="figures-tit">
+                        <ul>
+                          <li><img src="../../images/health/heart_icon.png" alt="심박아이콘"></li>
+                          <li>평균 심박</li>
+                          <li><span>102</span>bpm</li>
+                        </ul>
+                        <div class="info-cion"><img src="../../images/health/info.png" alt="정보아이콘"></div>
+                      </div><!--.figures-tit-->
+
+                      <ul class="figures-deta">
+                        <li><img src="../../images/health/hospital_icon.png" alt="병원아이콘"></li>
+                        <li>홍길동님의 심박수가 <span>낮습니다.</span> 일반적으로 <br>분당 맥박수가 60회 이하면 주의해야 합니다.</li>
+                      </ul><!--.figures-deta-->
+
+                      <div class="figures-graph"><img src="../../images/health/heartrate.png" alt="심박그래프"></div><!--.figures-graph-->
+
+                      <ul class="month">
+                        <li>3월</li>
+                        <li>4월</li>
+                        <li>5월</li>
+                        <li>6월</li>
+                        <li>7월</li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="figures-tit">
+                        <ul>
+                          <li><img src="../../images/health/lung_icon.png" alt="호흡아이콘"></li>
+                          <li>평균 호흡</li>
+                          <li><span>11.5 ~ 18</span>회/분</li>
+                        </ul>
+                        <div class="info-cion"><img src="../../images/health/info.png" alt="정보아이콘"></div>
+                      </div><!--.figures-tit-->
+
+                      <ul class="figures-deta">
+                        <li><img src="../../images/health/hospital_icon.png" alt="병원아이콘"></li>
+                        <li>홍길동님의 호흡 수는 <span>정상</span>입니다. <br>분당 12~15회 정도가 정상 범위에 속합니다.</li>
+                      </ul><!--.figures-deta-->
+
+                      <div class="figures-graph"><img class="figures-graph-nonclik" src="../../images/health/breathing.png" alt="호흡그래프">
+                      <img class="figures-graph-clik" src="../../images/health/breathing_click.png" alt="호흡그래프클릭시"></div><!--.figures-graph-->
+
+                      <ul class="month">
+                        <li>3월</li>
+                        <li>4월</li>
+                        <li>5월</li>
+                        <li>6월</li>
+                        <li>7월</li>
+                      </ul>
+                    </li>
+
+
+                    <li>
+                      <div class="figures-tit">
+                        <ul>
+                          <li><img src="../../images/health/fall.png" alt="낙상아이콘"></li>
+                          <li>평균 낙상</li>
+                          <li><span>0</span>건</li>
+                        </ul>
+                        <div class="info-cion"><img src="../../images/health/info.png" alt="정보아이콘"></div>
+                      </div><!--.figures-tit-->
+
+                      <ul class="figures-deta">
+                        <li><img src="../../images/health/hospital_icon.png" alt="병원아이콘"></li>
+                        <li><span>낙상이 발생</span>했습니다. 주변 환경을 점검하고 <br>안전에 주의하세요.</li>
+                      </ul><!--.figures-deta-->
+
+                      <div class="figures-graph"><img class="figures-graph-nonclik" src="../../images/health/fall_graph.png" alt="낙상그래프"><img class="figures-graph-clik" src="../../images/health/fall_graph_click.png" alt="낙상그래프"></div><!--.figures-graph-->
+
+                      <ul class="month">
+                        <li>3월</li>
+                        <li>4월</li>
+                        <li>5월</li>
+                        <li>6월</li>
+                        <li>7월</li>
+                      </ul>
+                    </li>
+
+                    
+                  </ul><!--.figures-box-->
+
+                </div><!--.figures-wrap-->
+              </div><!--.figures-->
+
+
+              
+            </li><!-- 전체 -->
+
+
+            <li class="alarm-sensor">
+              <p>주간</p>
+            </li><!-- 센서 현황 -->
+
+
+
+            <li class="alarm-life">
+              <p>일간</p>
+            </li><!-- 생활 -->
+          </ul>
+
+        </div><!-- tab con -->
+
+    </div><!--.cont-alarm-->
+
+    
+
+    
+  </div><!--#wrap-->
+
+</body>
+</html>
