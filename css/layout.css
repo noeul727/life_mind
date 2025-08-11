@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root{
-  --main-font : "Pretendard-Regular", sans-serif;
+  --main-font : "pretendard", sans-serif;
   --main-1 : #5B9CFF;
   --main-2 : #84AFFF;
   --main-3 : #A9C7FF;
@@ -138,7 +138,7 @@ input[type="checkbox"] + label::before{
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: -10%;;
+  top: 0%;
 } 
 input[type="checkbox"]:checked + label::before{
   background: url(../images/mypage/icon-check-blue.svg) no-repeat center;
@@ -303,6 +303,7 @@ input[type="checkbox"]:checked + label{
 
 .box .sel{
   width: 100%;
+  height: 100%;
 }
 
 .box .sel01, .box .sel02, .box .sel03{
