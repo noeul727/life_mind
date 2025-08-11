@@ -20,5 +20,13 @@ $(document).ready(function(){//start
       
     });
   });
+
+  var selSwiperCol1 = new Swiper(".sel .swiper-container", {
+          loop: false,
+          direction: 'vertical',
+          slidesPerView: 5,
+          initialSlide: 0,
+          centeredSlides: true,
+      });
   
 });//end

@@ -246,9 +246,7 @@ fieldset p .bi{
   padding: 5%;
   text-align: center;
 }
-.modal-wrap .modal-box ul{
-  padding: 3% 5%;
-}
+
 .modal-wrap .modal-box ul li{
   font-size: 2rem;
   margin-bottom: 4px;
@@ -265,6 +263,44 @@ fieldset p .bi{
   right: 24px;
   background-color: transparent;
   cursor: pointer;
+}
+/*도로록*/
+.box{
+	height: 300px;
+  position: relative;
+  display: flex;
+}
+
+
+.box .sel{
+  width: 100%;
+}
+
+.box .sel01, .box .sel02, .box .sel03{
+  width: calc(100% / 3);
+}
+
+
+.swiper-container{
+  width: 100%;
+  height: 100%;
+  position:relative;
+}
+
+
+
+.swiper-slide {
+  font-size: 1.6rem;
+  color: var(--grayscale-5);
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide.swiper-slide-active{
+  color: #333;
+  font-size: 2rem;
 }
 
 /*footer*/
@@ -319,10 +355,10 @@ fieldset p .bi{
   font-size: 2.4rem;
 }
 .gnb-list ul.active:hover li{
-  color: var(--mainfont-color);
+  color: var(--main-1);
 }
 .gnb-list ul.active:hover .bi{
-  color: var(--mainfont-color);
+  color: var(--main-1);
 }
 .gnb-home{
   width: 55px; 
