@@ -112,6 +112,21 @@ $(document).ready(function(){//start
   });
 
 
+
+  $(".sensor-place-modal").hide();
+  $(".sensor-place-wrap").hide();
+  $(".sensor-place-modal-btn01").click(function(){
+    $(".sensor-place-modal").fadeIn();
+    $(".sensor-place-wrap").fadeIn();
+  });
+
+  $(".sensor-place-modal-btn02").click(function(){
+    $(".sensor-place-modal").fadeOut();
+    $(".sensor-place-wrap").fadeOut();
+  });
+  
+
+
   
 
   
