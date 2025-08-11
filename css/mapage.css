@@ -108,10 +108,10 @@ p4: 14px M
 }
 
 .f-mypage .gnb-list .f-mypage-ul li{
-  color: var(--mainfont-color);
+  color: var(--main-1);
 }
 .f-mypage .gnb-list .f-mypage-ul .bi{
-  color: var(--mainfont-color);
+  color: var(--main-1);
 }
 /*메인*/
 .content-mypage-main ul{
@@ -367,13 +367,13 @@ p4: 14px M
 
 
 /*생활알림*/
-.cycle .cycle-menu ul{
+.registration .registration-menu ul{
   display: flex;
   gap: 12px;
   justify-content: space-between;
   margin: 8px 0 12px;
 }
-.cycle .cycle-menu ul li{
+.registration .registration-menu ul li{
   flex: 1;
   text-align: center;
   padding: 12px 0;
@@ -384,22 +384,87 @@ p4: 14px M
   font-size: 1.8rem;
   cursor: pointer;
 }
-.cycle .cycle-menu ul li.active{
+.registration .registration-menu ul li.active{
   background-color: var(--main-1);
   color: var(--white);
 }
-.cycle .field05 ul{
+.registration .field05 ul{
   margin-bottom: 12px;
 }
-.cycle .field05 p{
+.registration .field05 p{
   font-size: 1.8rem;
   color: var(--grayscale-6);
+  margin-bottom: 20px;
 }
-.cycle .field05 .bi{
+.registration .field05 .bi{
   font-size: 1.6rem;
   color: var(--grayscale-7);
   margin-right: 6px;
   cursor: pointer;
+
 }
 
 
+/*일정 등록*/
+.registration .alert-set .btn-time-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  width: 100%;
+}
+.registration .alert-set .btn-time-box div{
+  width: calc((100% - 16px) / 2);
+}
+.registration .alert-set .btn-time-box .btn-time-right{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.registration .alert-set .btn-time-box .btn-time-right button{
+  width: calc((100% - 16px) / 2);
+}
+.registration .alert-set .btn-time-box .time-set{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--mainfont-color);
+  border: 2px solid var(--main-1);
+
+  background-color: transparent;
+  font-size: 1.8rem;
+}
+
+.registration .alert-set .btn-time-box .delete{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #FF6464;
+  width: 100%;
+  background-color: #FFE4E4;
+  font-size: 1.8rem;
+}
+.registration .alert-set .btn-time-box .plus-btn{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--main-1);
+
+  background-color: var(--main-5);
+  font-size: 1.8rem;
+} 

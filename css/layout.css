@@ -249,7 +249,6 @@ fieldset p .bi{
 
 .modal-wrap .modal-box ul li{
   font-size: 2rem;
-  margin-bottom: 4px;
   padding: 2%;
   cursor: pointer;
 }
@@ -300,6 +299,8 @@ fieldset p .bi{
 
 .swiper-slide.swiper-slide-active{
   color: #333;
+  background-color: rgba(91, 156, 255, 0.12) ;
+  border-radius: 4px;
   font-size: 2rem;
 }
 
@@ -354,10 +355,10 @@ fieldset p .bi{
 .gnb-list .bi{
   font-size: 2.4rem;
 }
-.gnb-list ul.active:hover li{
+.gnb-list ul:hover li{
   color: var(--main-1);
 }
-.gnb-list ul.active:hover .bi{
+.gnb-list ul:hover .bi{
   color: var(--main-1);
 }
 .gnb-home{
