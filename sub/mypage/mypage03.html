@@ -32,15 +32,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!--css-->
   <link rel="stylesheet" href="../../css/reset.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
   <link rel="stylesheet" href="../../css/aos.css">
   <link rel="stylesheet" href="../../css/common.css">
   <link rel="stylesheet" href="../../css/layout.css">
   <link rel="stylesheet" href="../../css/mapage.css">
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
   <script src="../../js/aos.js"></script>
   <script src="../../js/layout.js"></script>
   <script src="../../js/mypage.js"></script>
@@ -85,6 +85,7 @@
                 </div>
               </div>
               
+
               <div class="field05-right">
                 <div>
                   <h4>8월</h4><img src="../../images/arrow/arrow-updown.svg" alt="arrow">
@@ -99,13 +100,18 @@
             
             
           </div>
-          <div class="field02">
-            <h2>성별</h2>
-            <div class="btn-midbox">
-            <button type="button" class="btn-mid-02"><span>남자</span><img src="../../images/check-icon_w.svg" alt="체크"></button>
-            <button type="button" class="btn-mid-01"><span>여자</span><img src="../../images/check-icon_w.svg" alt="체크"></button>
+          <fieldset class="field02">
+            <legend>인풋박스 아이콘 추가</legend>
+            <div class="input-icon">
+              <h2>성별</h2>
+              <ul class="project-character">
+                <li><input type="radio" id="man" name="gender"><label for="man">남자</label></li>
+                <li><input type="radio" id="woman" name="gender"><label for="woman">여자</label></li>
+                
+              </ul>
             </div>
-          </div>
+          </fieldset>
+
           <fieldset class="field02">
             <legend>인풋박스 아이콘 추가</legend>
             <div class="input-icon">
