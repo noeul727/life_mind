@@ -77,11 +77,11 @@
           </fieldset>
           <div class="field05">
             <h2>생년월일</h2>
-              <div class="choice-box">
+            <div class="choice-box">
+              <div class="field05-left">
                 <div>
-                  <div class="field05-left">
-                    <h4>1940년</h4>
-                    <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
+                  <h4>1940년</h4>
+                  <img src="../../images/arrow/arrow-updown.svg" alt="arrow">
                 </div>
               </div>
               
@@ -104,9 +104,9 @@
             <legend>인풋박스 아이콘 추가</legend>
             <div class="input-icon">
               <h2>성별</h2>
-              <ul class="project-character">
-                <li><input type="radio" id="man" name="gender"><label for="man">남자</label></li>
-                <li><input type="radio" id="woman" name="gender"><label for="woman">여자</label></li>
+              <ul class="btn-midbox">
+                <li><input type="radio" id="man" name="gender"  class="btn-mid-01" checked><label for="man">남자<img src="../../images/check-icon_w.svg" alt="체크"></label></li>
+                <li><input type="radio" id="woman" name="gender"  class="btn-mid-02"><label for="woman">여자<img src="../../images/check-icon_w.svg" alt="체크"></label></li>
                 
               </ul>
             </div>
@@ -139,27 +139,30 @@
         <button type="button" class="btn-big-01 back">수정</button>
       </div><!--.inner-->
 
-      <div class="modal-wrap">
+      <div class="modal-wrap bottom-modal btn-birth">
         <div class="modal-box">
           <div class="modal-inner">
-               <div class="box">
-                  <div class="sel inner">
-                    <div class="swiper-container">
-                      <ul class="swiper-wrapper year-list">
-                        <li class="swiper-slide"><h6>1936년</h6></li>
-                        <li class="swiper-slide"><h6>1937년</h6></li>  
-                        <li class="swiper-slide"><h6>1938년</h6></li>
-                        <li class="swiper-slide"><h6>1939년</h6></li>  
-                        <li class="swiper-slide"><h6>1940년</h6></li>
-                        <li class="swiper-slide"><h6>1941년</h6></li>  
-                        <li class="swiper-slide"><h6>1942년</h6></li>
-                        <li class="swiper-slide"><h6>1943년</h6></li>  
-                      </ul>
-                    </div>
-                  </div>
-                </div><!--box-->
+            <div class="box">
+              <div class="sel inner">
+                <div class="swiper-container">
+                  <ul class="swiper-wrapper year-list">
+                    <li class="swiper-slide"><h6>1946년</h6></li>
+                    <li class="swiper-slide"><h6>1945년</h6></li>
+                    <li class="swiper-slide"><h6>1944년</h6></li>
+                    <li class="swiper-slide"><h6>1943년</h6></li>
+                    <li class="swiper-slide"><h6>1942년</h6></li>  
+                    <li class="swiper-slide"><h6>1941년</h6></li>
+                    <li class="swiper-slide"><h6>1940년</h6></li>  
+                    <li class="swiper-slide"><h6>1939년</h6></li>
+                    <li class="swiper-slide"><h6>1938년</h6></li>  
+                    <li class="swiper-slide"><h6>1937년</h6></li>
+                    <li class="swiper-slide"><h6>1936년</h6></li>  
+                  </ul>
+                </div>
+              </div>
+            </div><!--box-->
               
-            <button type="button" class="btn-big-01">확인</button>
+            <button type="button" class="btn-big-01 undo">확인</button>
             
           </div><!--.modal-inner-->
           <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
