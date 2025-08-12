@@ -50,7 +50,7 @@
     <header class="header head1">
       <div class="inner">
         <ul>
-          <li><a href="mypage01.html"><img src="../../images/arrow/tit-arrow.svg" alt="뒤로가기"></a></li>
+          <li><a href="mypage09.html"><img src="../../images/arrow/tit-arrow.svg" alt="뒤로가기"></a></li>
           <li><h1>복약등록</h1></li>
         </ul>
       </div><!--.inner-->
@@ -137,7 +137,7 @@
                     </div>
                     <fieldset class="field06">
                       <legend>인풋박스 아이콘 추가</legend>
-                      <input type="checkbox" id="check01" ><label for="check01">날짜 지정 안함</label>
+                      <input type="checkbox" id="check01"><label for="check01">날짜 지정 안함</label>
                     </fieldset>
                   
                     
@@ -145,6 +145,20 @@
                   </div>
                   <div class="alert-set">
                     <h2>알람시간</h2>
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+                   <div class="alert-set alert02">
                     <div class="btn-time-box">
                       <div class="btn-time-left">
                         <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
@@ -194,6 +208,20 @@
                   </div>
                   <div class="alert-set">
                     <h2>알람시간</h2>
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                   
+                  </div>
+                   <div class="alert-set alert02">
                     <div class="btn-time-box">
                       <div class="btn-time-left">
                         <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
@@ -294,6 +322,20 @@
                     </div>
                    
                   </div>
+                  <div class="alert-set alert02">
+                    <div class="btn-time-box">
+                      <div class="btn-time-left">
+                        <button type="button" class="time-set"><img src="../../images/mypage/icon-clock.svg" alt="시계"><span>오전 09:00</span>
+                        </button>
+                      </div>
+                      <div class="btn-time-right">
+                        <button type="button" class="delete"><i class="bi bi-dash-circle-fill"></i>삭제</button>
+                        <button type="button" class="plus-btn"><i class="bi bi-plus-circle-fill"></i>추가</button>
+                      </div>
+
+                    </div>
+                   
+                  </div>
 
 
                 </li>
@@ -310,21 +352,47 @@
            
           </form>
         </div><!--.field-area-->
-        <button type="button" class="btn-big-01 back">등록</button>
+        <button type="button" class="btn-big-01 btn-registration back">등록</button>
       </div><!--.inner-->
-
-        <div class="modal-wrap">
-          <div class="modal-box">
-            <div class="modal-inner">
-              <div class="icon-box">
-                <img src="../../images/mypage/full-checked-blue.svg" alt="구독권">
+      <div class="modal-wrap bottom-modal btn-year">
+        <div class="modal-box">
+          <div class="modal-inner">
+            <div class="box">
+              <div class="sel inner">
+                <div class="swiper-container">
+                  <ul class="swiper-wrapper year-list">
+                    <li class="swiper-slide"><h6>1936년</h6></li>
+                    <li class="swiper-slide"><h6>1937년</h6></li>  
+                    <li class="swiper-slide"><h6>1938년</h6></li>
+                    <li class="swiper-slide"><h6>1939년</h6></li>  
+                    <li class="swiper-slide"><h6>1940년</h6></li>
+                    <li class="swiper-slide"><h6>1941년</h6></li>  
+                    <li class="swiper-slide"><h6>1942년</h6></li>
+                    <li class="swiper-slide"><h6>1943년</h6></li>  
+                  </ul>
+                </div>
               </div>
-              <h5>일정이 등록되었습니다.</h5>
-              <button type="button" class="btn-big-01">확인</button>
+            </div><!--box-->
               
-            </div><!--.modal-inner-->
-            <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
-          </div>
+            <button type="button" class="btn-big-01 undo">확인</button>
+            
+          </div><!--.modal-inner-->
+          <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
+        </div>
+      </div><!--.modal-wrap-->
+      
+      <div class="modal-wrap center-modal registration01">
+        <div class="modal-box">
+          <div class="modal-inner">
+            <div class="icon-box">
+              <img src="../../images/mypage/full-checked-blue.svg" alt="구독권">
+            </div>
+            <h5>일정이 등록되었습니다.</h5>
+            <a href="mypage09.html"><button type="button" class="btn-big-01">확인</button></a>
+              
+          </div><!--.modal-inner-->
+          <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
+        </div>
       </div><!--.modal-wrap-->
     </div><!--.cont-layout-->
 

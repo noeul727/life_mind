@@ -127,6 +127,17 @@ $(document).ready(function(){//start
   
 
 
+
+  $(".sensor-find-a").hide();
+  $(".sensor-find-b").hide();
+  $(".sensor-search-device").click(function(){
+    $(".sensor-find-a").fadeIn();
+  });
+  $(".device-co").click(function(){
+    $(".sensor-find-b").fadeIn();
+    $(".sensor-find-a").fadeOut();
+  });
+
   
 
   

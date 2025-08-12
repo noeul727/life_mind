@@ -665,7 +665,6 @@ p4: 14px M
 }
 
 
-
 .sensor-place-wrap{
   position: fixed;
   width: 100%;
@@ -704,3 +703,98 @@ p4: 14px M
   font-size: 2.0rem;
   color: var(--grayscale-2);
 }
+
+
+.e-find-a{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.e-find-a-box{
+  width: 100%;
+  height: 234px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  border-radius: 16px 16px 0 0;
+}
+.e-find-a  p{
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  text-align: center;
+  margin-top: 50px;
+}
+.e-find-a .btn-midbox{
+  bottom: 28px;
+  width: 90%;
+  position: absolute;
+}
+
+
+.sensor-find-a, .sensor-find-b{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.sensor-find-a-box{
+  width: 100%;
+  height: 234px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  border-radius: 16px 16px 0 0;
+}
+.sensor-find-a  p, .sensor-find-b p{
+  font-size: 2.0rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  text-align: center;
+  margin-top: 50px;
+}
+.sensor-find-a .btn-midbox, .sensor-find-b .btn-midbox{
+  bottom: 28px;
+  width: 90%;
+  position: absolute;
+}
+
+
+.registration-wifi{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 294px;
+  height: 268px;
+  background-color: #fff;
+  z-index: 9999;
+  border-radius: 15px;
+  text-align: center;
+  padding: 12px;
+}
+
+.registration-wifi .btn-big-01{
+  position: absolute;
+  bottom: 8px;
+}
+
+.registration-wifi img{
+  width: 60px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.registration-wifi h2{
+  font-size: 2.0rem;
+  color: var(--grayscale-2);
+}
+

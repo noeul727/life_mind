@@ -3,15 +3,61 @@ $(document).ready(function(){//start
 
 
   //modal-wrap 사라짐
-//  $(".modal-wrap").hide();
-  $(".content-mypage-sub-02 .field05 ul li.choice-year").click(function(){
-    $(".modal-wrap").fadeIn();
+  $(".modal-wrap").hide();
+  
+
+  //로그아웃 모달
+  $(".content-mypage-main .my-logout").click(function(){
+    $(".btn-logout").fadeIn();
   });
-  $(".modal-wrap .modal-box .btn-close").click(function(){
+  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo, .modal-wrap .modal-box .btn-cancel").click(function(){
     $(".modal-wrap").fadeOut();
   });
-  
-  
+
+
+  //대상자 수정 모달(1940년)
+  $(".content-mypage-sub-02 .field05-left").click(function(){
+    $(".btn-birth").fadeIn();
+  });
+  //구독권 등록 모달
+  $(".subscription-plus").click(function(){
+    $(".modal-subscription01").fadeIn();
+  });
+  $(".modal-wrap .modal-box .btn-close").click(function(){
+    $(".modal-subscription01").fadeOut();
+  });
+   $(".modal-wrap .subscription-btn").click(function(){
+    $(".modal-subscription01").fadeOut();
+    $(".modal-subscription02").fadeIn();
+  });
+
+  //일정등록 모달
+ $(".registration .field05-left").click(function(){
+    $(".btn-year").fadeIn();
+  });
+  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo").click(function(){
+    $(".modal-wrap").fadeOut();
+  });
+
+
+ $(".btn-registration").click(function(){
+    $(".registration01").fadeIn();
+  });
+  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo").click(function(){
+    $(".modal-wrap").fadeOut();
+  });
+
+  //방핵금지모드 모달
+ $(".dororok").click(function(){
+    $(".modal-start").fadeIn();
+  });
+  $(".dororok01").click(function(){
+    $(".modal-start").fadeOut();
+    $(".modal-finish").fadeIn();
+  });
+
+
+
   /*생활 알림 */
   $(".routine .routine-content-list > li").hide();
       
@@ -56,4 +102,30 @@ $(document).ready(function(){//start
       let aa = $(this).index();
       $(".registration .registration-content-list > li").eq(aa).show().siblings().hide();
      });
+
+
+ // 알람 추가
+
+    $(".alert02").hide();
+    $(".plus-btn").click(function(){
+      $(".alert02").show();
+    });
+    $(".alert02 .delete").click(function(){
+      $(".alert02").hide();
+    });
+
+
+     //토글 버튼 방해 금지 모드
+     $(".toggle-left p, .toggle-left h4").hide();
+     $(".toggle-right .switch input").change(function(){
+      if($(this).is(":checked")){
+        $(".toggle-left p, .toggle-left h4").show();
+      }else{
+        $(".toggle-left p, .toggle-left h4").hide();
+      }
+     });
+
+     
+
+
 });//end
