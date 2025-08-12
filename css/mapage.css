@@ -53,18 +53,18 @@ p4: 14px M
   background-color: var(--bg-color);
 }
 [class^="content-mypage-"] .sec-profile{
-  margin-bottom : 5%;
+  margin-bottom : 20px;
 }
 [class^="content-mypage-"] .sec-profile .profile-sh-b, [class^="content-mypage-"] .sec-profile .profile-ka{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2%;
+  gap: 8px;
   width: 100%;
   height: 120px;
   background-color: var(--main-1);
   margin-top: 12px;
-  padding: 2% 5%;
+  padding: 12px 32px;
   border-radius: 15px;
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-img{
@@ -72,7 +72,7 @@ p4: 14px M
   aspect-ratio: 1 / 1; /* 가로:세로 = 1:1 */
   border-radius: 50%;
   background-color: var(--main-6);
-  padding: 3% 3% 4%;
+  padding: 8px 8px 10px;
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-img img{
   width: 100%;
@@ -80,7 +80,7 @@ p4: 14px M
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info{
   flex: 1;
-  margin-left: 3%;
+  margin-left: 8px;
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info h3{
   font-size: 2.6rem;
@@ -116,6 +116,8 @@ p4: 14px M
 .f-mypage .gnb-list .f-mypage-ul .bi{
   color: var(--main-1);
 }
+
+
 /*메인*/
 .content-mypage-main ul{
   margin-top: 20px;
@@ -156,8 +158,6 @@ p4: 14px M
 .content-mypage-sub-02 input[type="radio"]{
   appearance: none;
 }
-
-
 .content-mypage-sub-02 input[type="radio"] + label{
   position: relative;
   padding: 0 28px;
@@ -216,12 +216,12 @@ p4: 14px M
 .content-mypage-sub-02 .field05 .choice-box > div{
   width: 100%;
   gap: 16px;
-  align-items: space-between;
+  align-items: center;
   border: 1px ;
   height: 48px;
   cursor: pointer;
   border-radius: 16px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .content-mypage-sub-02 .field05 .choice-box > div div{
   width: 100%;
@@ -253,7 +253,7 @@ p4: 14px M
 .content-mypage-sub-02 .btn-midbox .btn-mid-01{
   background-color: var(--grayscale-8);
   color: var(--white);
-  margin-bottom: 20px;
+
 }
 .content-mypage-sub-02 .btn-midbox input[type="radio"]{
   appearance: none;
@@ -265,8 +265,17 @@ p4: 14px M
   gap: 8px;
   margin-top: 8px;
 }
-
-
+.profile-re.btn-midbox input[type="radio"] + label {
+  margin-top: 0;
+}
+@media (max-width : 390px){
+  .content-mypage-sub-02 .field05 .choice-box{
+    gap: 8px;
+  }
+  .content-mypage-sub-02 .field05 .choice-box > div div{
+    padding: 0 8px;
+  }
+}
 /*보호자 수정*/
 .guardian .sf02 .profile-sh-y .profile-img{
   background-color: var(--main-5);
@@ -778,7 +787,7 @@ p4: 14px M
 }
 
 /**/
-@media (max-width : 500px){
+@media (max-width : 390px){
   .content-mypage-main.cs ul.cs-info li br{
     display: block;
   }

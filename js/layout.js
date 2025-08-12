@@ -25,7 +25,7 @@ $(document).ready(function(){//start
           loop: false,
           direction: 'vertical',
           slidesPerView: 5,
-          initialSlide: 0,
+          initialSlide: 6,
           centeredSlides: true,
       });
   

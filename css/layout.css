@@ -94,7 +94,6 @@ button{
   color: var(--grayscale-3);
 }
 
-
 /*인풋박스*/
 ::placeholder{
   color: var(--grayscale-6);
