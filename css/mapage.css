@@ -119,6 +119,7 @@ p4: 14px M
 
 
 /*메인*/
+
 .content-mypage-main ul{
   margin-top: 20px;
   background-color: var(--white);
@@ -234,6 +235,7 @@ p4: 14px M
   color: var(--grayscale-3);
   border-radius: 12px;
   border: 2px solid var(--main-1);
+  padding: 0 3%;
 }
 .content-mypage-sub-02 .field05 .choice-box .field05-right{
   display: flex;
@@ -330,6 +332,8 @@ p4: 14px M
 }
 .content-mypage-03 .subscription-box-01 h3{
   color: var(--grayscale-6);
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 [class^="content-mypage-"] .plus{
   display: flex;
@@ -387,9 +391,9 @@ p4: 14px M
 /*생활알림*/
 .routine .life-icon{
   background-color: var(--main-5);
-  border-radius: 12px;
-  width: 40px;
-  height: 40px;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
   position: relative;
 }
 .routine .life-icon img{
@@ -408,7 +412,7 @@ p4: 14px M
   flex: 1;
   text-align: center;
   padding: 12px 0;
-  background-color: var(--grayscale-9);
+  background-color: rgba(240, 243, 246, 0.8);
   color: var(--grayscale-3);
   border-radius: 8px;
   font-weight: 600;
@@ -447,7 +451,7 @@ p4: 14px M
   gap: 8px;
 }
 .routine .routine-content-item h4{
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 .routine .routine-content-item .btn-time{
   display: flex;
@@ -484,7 +488,7 @@ p4: 14px M
   flex: 1;
   text-align: center;
   padding: 12px 0;
-  background-color: var(--grayscale-9);
+  background-color: rgba(240, 243, 246, 0.8);
   color: var(--grayscale-3);
   border-radius: 8px;
   font-weight: 600;
@@ -606,7 +610,7 @@ p4: 14px M
   color: var(--grayscale-3);
   border-radius: 12px;
   padding: 16px 6px;
-  background-color: var(--grayscale-9);
+  background-color: rgba(240, 243, 246, 0.8);
   font-weight: 600;
 }
  
@@ -712,17 +716,6 @@ p4: 14px M
 
 .large-mode:checked ~ ul .toggle-box .toggle-left h3 {
   font-size: 2.4rem;
-}
-/* 큰 글씨 모드 켜졌을 때 스위치 크기 확대 */
-.large-mode:checked ~ ul .switch {
-  width: 50px;
-  height: 26px;
-}
-
-.large-mode:checked ~ ul .switch .slider:before {
-  width: 20px;
-  height: 20px;
-  transform: translateX(24px); /* 손잡이 이동 거리 조정 */
 }
 
 .toggle-left p{

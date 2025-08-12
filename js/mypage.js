@@ -99,8 +99,8 @@ $(document).ready(function(){//start
       */
      $(".registration .registration-menu li").click(function(){
       $(this).addClass("active").siblings().removeClass("active");
-      let aa = $(this).index();
-      $(".registration .registration-content-list > li").eq(aa).show().siblings().hide();
+      let cc = $(this).index();
+      $(".registration .registration-content-list > li").eq(cc).show().siblings().hide();
      });
 
 
