@@ -1,0 +1,29 @@
+@charset "utf-8";
+:root{
+  --main-font : "pretendard", sans-serif;
+  --main-1 : #5B9CFF;
+  --main-2 : #84AFFF;
+  --main-3 : #A9C7FF;
+  --main-4 : #CEE2FF;
+  --main-5 : #E0EBFF;
+  --main-6 : #EFF8FF;
+  --grayscale-1 : #101010;
+  --grayscale-2 : #252525;
+  --grayscale-3 : #454545;
+  --grayscale-4 : #5D5F62;
+  --grayscale-5 : #83878B;
+  --grayscale-6 : #9CA2A8;
+  --grayscale-7 : #BAC0C5;
+  --grayscale-8 : #D5D9DD;
+  --grayscale-9 : #E5EAEF;
+  --grayscale-10 : #F0F3F6;
+  --white : #fff;
+  --mainfont-color: #2079ff;
+  --bg-color : #F6FAFD;
+  --main-gradi : linear-gradient(90deg,rgba(124, 176, 255, 1) 0%, rgba(87, 154, 255, 1) 100%);
+}
+
+
+.user-guide-wrap{
+  padding-top: 20px;
+}

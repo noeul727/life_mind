@@ -115,15 +115,6 @@ $(document).ready(function(){//start
     });
 
 
-     //토글 버튼 방해 금지 모드
-     $(".toggle-left p, .toggle-left h4").hide();
-     $(".toggle-right .switch input").change(function(){
-      if($(this).is(":checked")){
-        $(".toggle-left p, .toggle-left h4").show();
-      }else{
-        $(".toggle-left p, .toggle-left h4").hide();
-      }
-     });
 
      
 
