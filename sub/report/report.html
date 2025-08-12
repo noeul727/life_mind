@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  검색엔진 최적화(SEO)를 위한 메타태그
+  메타요소는 HTML의 head 요소 안에 포함시킬 수 있음
+  일반적인 마크업과는 별개로 페이지에 관련된 정보를 지정하는 데 사용됨
+  검색엔진 최적화가 관련이 있음
+  -->
+  <meta name="keywords" content="오설록">
+  <meta name="description" content="차와 제주가 선사하는 가치 있는 쉼, 오설록">
+  <!-- 오픈그래프 open graph
+   콘텐츠의 요약 내용이 sns에 개시되는데 최적화된 데이터를 가지고 갈 수 있도록 설정하는 것
+   사용자가 클릭 하기 전에 크롤러가 해당 웹사이트를 방문하여
+   HTML의 head의 메타데이터를 크롤링하여 미리보기 화면을 생성해 준다
+   이미지의 경우 최소한 600*315픽셀은 되어야 하며,
+   1200*630 크기를 권장
+  -->
+   <meta property="og:title" content="라이프마인드">
+   <meta property="og:url" content="https://min-space.github.io/osulloc/index.html">
+   <meta property="og:image" content="images/common/og_img.jpg">
+   <meta property="og:type" content="website">
+   <meta property="og:description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
+  <title>리포트</title>
+  <!--파비콘-->
+  <link rel="icon" href="../../images/favicon-life-mind.png">
+  <!--폰트-->
+  <link rel="stylesheet" href="../../css/font.css">
+  <!--부트스트랩-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--css-->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/aos.css">
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/report.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="../../js/aos.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/alarm.js"></script>
+  <script src="../../js/report.js"></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <header class="header head3">
+      <div class="inner">
+        <ul>
+          <li><a href="../../index.html"><img src="../../images/arrow/tit-arrow.svg" alt="뒤로가기"></a></li>
+          <li><h1>리포트</h1></li>
+        </ul>
+
+        <div class="calendar">
+        <ul class="month">
+          <li>
+            <ul class="month-deta">
+              <li><img src="../../images/report/calendar.png" alt="달력아이콘"></li>
+              <li>7월</li>
+            </ul>
+          </li>
+          <li>일자선택</li>
+        </ul><!--.month-->
+
+        <ul class="week">
+          <li>
+            <p>월</p>
+            <p>01</p>
+            <p><img src="../../images/report/emoji01.png" alt="이모지01"></p>
+          </li>
+
+          <li>
+            <p>화</p>
+            <p class="today">02</p>
+            <p><img src="../../images/report/emoji02.png" alt="이모지02"></p>
+          </li>
+
+          <li>
+            <p>수</p>
+            <p>03</p>
+            <p><img src="../../images/report/emoji03.png" alt="이모지03"></p>
+          </li>
+
+          <li>
+            <p>목</p>
+            <p>04</p>
+            <p><img src="../../images/report/emoji01.png" alt="이모지01"></p>
+          </li>
+
+          <li>
+            <p>금</p>
+            <p>05</p>
+          </li>
+
+          <li>
+            <p>토</p>
+            <p>06</p>
+          </li>
+
+          <li>
+            <p>일</p>
+            <p>07</p>
+          </li>
+        </ul><!--.week-->
+      </div><!--.calendar-->
+
+      <div class="tab-menu">
+          <div class="tab active">일상</div>
+          <div class="tab" id="alarmsensortab">수면</div>
+          <div class="tab">건강가이드</div>
+        </div><!--.tab-menu-->
+
+      </div><!--.inner-->
+    </header>
+
+    <div class="cont-alarm">
+
+        <div class="tab-con">
+          <ul>
+            <li class="alarm-all">
+
+              <div class="routine">
+                <div class="evalue">
+                  <ul>
+                    <li><img src="../../images/report/emoji_blue.png" alt="이모지(블루버전)"></li>
+                    <li>잘하고 있어요!</li>
+                  </ul><!--.eavalue-->
+                </div><!--.evalue-->
+                
+
+                <h3 class="evalue-deta">홍길동님 오늘은 평소보다 <br> 많이 움직이셨네요!</h3>
+
+                <div class="routine-deta">
+                  <ul class="routine-time">
+                    <li>5시간전</li>
+                    <li>4시간전</li>
+                    <li>3시간전</li>
+                    <li>2시간전</li>
+                </ul><!--.routine-time-->
+
+                  <div class="routine-img">
+                    <img src="../../images/report/routine.png" alt="루틴">       
+                  </div><!--.routine-img-->
+
+                  <ul class="routine-tit">
+                    <li>기상</li>
+                    <li>식사</li>
+                    <li>화장실</li>
+                    <li>외출</li>
+                  </ul><!--.rountine-tit-->
+                </div><!--.routine-deta-->  
+              </div><!--.routine-->
+
+              <div class="activity">
+
+                <h2 class="report-tit">활동</h2>
+                <div class="activity-deta">
+                  <ul>
+                    <li>
+                      <p>움직이기</p>
+                      <p><img src="../../images/report/daily02.png" alt="움직이기"></p>
+                      <p>375kcal</p>
+                    </li>
+
+                    <li>
+                      <p>운동하기</p>
+                      <p><img src="../../images/report/daily03.png" alt="운동하기"></p>
+                      <p>34분</p>
+                    </li>
+
+                    <li>
+                      <p>일어서기</p>
+                      <p><img src="../../images/report/daily04.png" alt="일어서기"></p>
+                      <p>2시간</p>
+                    </li>
+                  </ul>
+                </div><!--.activity-deta-->
+              </div><!--.activity-->
+
+              <div class="movement">
+                <h2 class="report-tit">움직임</h2>
+                <div class="movement-deta">
+
+                  <div class="evalue">
+                  <ul>
+                    <li><img src="../../images/report/emoji_blue.png" alt="이모지(블루버전)"></li>
+                    <li>평소보다 12% 많이 움직였어요!</li>
+                  </ul><!--.eavalue-->
+                </div><!--.evalue-->
+
+                  <ul class="movement-graph">
+                    <li><img src="../../images/report/daily_graph01.png" alt="움직임 그래프1"></li>
+                    <li><img src="../../images/report/arrow-bold.png" alt="그래프 화살표"></li>
+                    <li><img src="../../images/report/daily_graph02.png" alt="움직임 그래프2"></li>
+                  </ul><!--.movement-graph-->
+
+                  <ul class="movement-sum">
+                    <li>
+                      <ul class="movement-sum01">
+                        <li></li>
+                        <li>활동</li>
+                        <li>5% 증가 ↑</li>
+                      </ul>
+                    </li>
+                    
+                    <li>
+                      <ul class="movement-sum02">
+                        <li></li>
+                        <li>움직이기</li>
+                        <li>6% 증가 ↑</li>
+                      </ul>
+                    </li>
+                  </ul><!--.movement-sum-->
+                </div><!--.movement-deta-->
+              </div><!--.movement-->
+            </li><!-- 일상 -->
+
+
+            <li class="alarm-sensor">
+              <div class="sleep">
+
+              <div class="sleep-sum">
+                 <div class="evalue">
+                  <ul>
+                    <li><img src="../../images/report/emoji_blue.png" alt="이모지(블루버전)"></li>
+                    <li>적정</li>
+                  </ul><!--.eavalue-->
+                </div><!--.evalue-->
+
+                <h3>홍길동님 오늘 수면 시간은</h3>
+
+                <ul class="sleep-total">
+                  <li>총 7시간 12분</li>
+                  <li>11:11 PM ~ 06:01 AM</li>
+                </ul>
+              </div><!--.sleep-sum-->
+
+              <div class="sleep-mea">
+                <h2 class="report-tit">수면측정</h2>
+
+                <div class="activity-deta">
+                  <ul>
+                    <li>
+                      <p>잠들기까지</p>
+                      <p><img src="../../images/report/sleep02.png" alt="잠들기까지"></p>
+                      <p>5분</p>
+                    </li>
+
+                    <li>
+                      <p>뒤척임</p>
+                      <p><img src="../../images/report/sleep03.png" alt="뒤척임"></p>
+                      <p>1시간 7분</p>
+                    </li>
+
+                    <li>
+                      <p>깊은 수면</p>
+                      <p><img src="../../images/report/sleep04.png" alt="깊은 수면"></p>
+                      <p>3시간</p>
+                    </li>
+                  </ul>
+                </div><!--.activity-deta-->
+              </div><!--.sleep-mea-->
+
+              <div class="sleep-report">
+                <h2 class="report-tit">주간 수면 리포트</h2>
+
+                <div class="sleep-report-flex">
+                    <ul class="sleep-report-left">
+                    <li>
+                      <ul class="sleep-report-section01">
+                        <li>
+                          <p>평균 취침</p>
+                          <p><span>11:11</span>PM</p>
+                        </li>
+
+                        <li>
+                          <p>평균 기상</p>
+                          <p><span>6:30</span>AM</p>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <ul class="sleep-report-section02">
+                        <li>
+                          <p>평균 수면</p>
+                          <p><span>6</span>시간</p>
+                        </li>
+
+                        <li>
+                          <p>수면 규칙성</p>
+                          <p><span>73</span>%</p>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul><!--.sleep-report-left-->
+
+                  <div class="sleep-report-right">
+                    <div class="sleep-btn"><p>미달</p></div>
+                    <div class="sleep-graph01"><img src="../../images/report/sleep_graph01.png" alt="주간 수면 리포트 그래프"></div>
+                    <ul>
+                      <li>
+                        <p>나</p>
+                        <p>7시간</p>
+                      </li>
+
+                      <li>
+                        <p>적정 수면</p>
+                        <p>8시간</p>
+                      </li>
+                    </ul>
+                  </div><!--.sleep-report-right-->
+
+                </div><!--.sleep-report-flex-->
+
+                
+              </div><!--.sleep-report-->
+
+              <div class="sleep-breathing">
+                <h2 class="report-tit">수면 중 호흡</h2>
+
+                <div class="sleep-breathing-deta">
+                  <div class="sleep-btn"><p>적정</p></div>
+                  <div class="sleep-graph02"><img src="../../images/report/sleep_graph02.png" alt="수면 중 호흡 그래프"></div>
+                  <ul>
+                    <li>11:00</li>
+                    <li>02:00</li>
+                    <li>04:00</li>
+                    <li>06:00</li>
+                    <li>08:00</li>
+                  </ul>
+                </div><!--.sleep-breathing-data-->
+              </div><!--.sleep-breathing-->
+              </div><!--.sleep-->
+            </li><!-- 수면 -->
+
+
+
+            <li class="alarm-life">
+              <div class="guide">
+
+                <div class="guide-sum">
+                  <div class="evalue">
+                  <ul>
+                    <li><img src="../../images/report/emoji_blue.png" alt="이모지(블루버전)"></li>
+                    <li>적정</li>
+                  </ul>
+                </div><!--.evalue-->
+
+                <h3 class="evalue-deta">움직임은 활발했어요. <br> 수면이 살짝 부족했네요.</h3>
+                </div><!--.guide-sum-->
+
+                <div class="diet">
+                   <h2 class="report-tit">홍길동님 맞춤 식단</h2>
+
+                   <div class="swiper food">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <div class="food-img"><img src="../../images/report/food01.png" alt="현미밥"></div>
+                        <p>현미밥</p>
+                      </li>
+
+                      <li class="swiper-slide">
+                        <div class="food-img"><img src="../../images/report/food02.png" alt="계란"></div>
+                        <p>계란</p>
+                      </li>
+
+                      <li class="swiper-slide">
+                        <div class="food-img"><img src="../../images/report/food03.png" alt="브로콜리"></div>
+                        <p>브로콜리</p>
+                      </li>
+
+                      <li class="swiper-slide">
+                        <div class="food-img"><img src="../../images/report/food04.png" alt="사과"></div>
+                        <p>사과</p>
+                      </li>
+                    </ul><!--swiper-wrapper-->
+                  </div><!--.swiper-->
+                </div><!--.diet-->
+
+                  <div class="fitness">
+                    <h2 class="report-tit">홍길동님 맞춤 식단</h2>
+                    <div class="fitness-deta">
+                      <ul class="fitness-tit">
+                        <li>
+                          <ul>
+                            <li>1단계</li>
+                            <li>의자 무릎 운동</li>
+                          </ul>
+                        </li>
+
+                        <li><img src="../../images/report/more.png" alt="더보기"></li>
+                      </ul><!--.fitness-tit-->
+
+                      <div class="fitness-img"><img src="../../images/report/guide02.png" alt="의자 무릎 운동"></div>
+
+                      <ul class="fitness-step">
+                        <li>
+                          <ul>
+                            <li>1</li>
+                            <li>의자에 앉습니다. 무릎을 편 상태에서 발목을 폅니다. 5초간 유지하세요.</li>
+                          </ul>
+                        </li>
+
+                        <li>
+                          <ul>
+                            <li>2</li>
+                            <li>무릎을 편 상태에서 발목을 굽힙니다. 5초간 유지하세요.</li>
+                          </ul>
+                        </li>
+                      </ul><!--.fitness-step-->
+                    </div><!--.fitness-deta-->
+                  </div><!--.fitness-->
+                
+              </div><!--.guide-->
+  
+              
+            </li><!-- 건강 가이드 -->
+          </ul>
+
+        </div><!-- tab con -->
+
+    </div><!--.cont-alarm-->
+
+
+    
+
+    
+  </div><!--#wrap-->
+
+</body>
+</html>

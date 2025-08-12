@@ -25,6 +25,23 @@ $(".figures .figures-box > li .month").click(function() {
   $li.find(".figures-graph .figures-graph-nonclik").hide();
 });
 
+// 모든 .figures-graph-clik 숨기기
+$(".figures .figures-box .figures-graph .figures-graph-clik").hide();
+
+// month 클릭 시
+$(".figures .figures-box > li .month").click(function () {
+  var $li = $(this).closest("li");
+
+  // 1. 모든 li를 원래 상태로 초기화
+  $(".figures .figures-box .figures-graph .figures-graph-clik").hide();
+  $(".figures .figures-box .figures-graph .figures-graph-nonclik").show();
+
+  // 2. 현재 클릭한 li만 변경
+  $li.find(".figures-graph .figures-graph-clik").show();
+  $li.find(".figures-graph .figures-graph-nonclik").hide();
+});
+
+
 
 
 

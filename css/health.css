@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-  --main-font: "Pretendard-Regular", sans-serif;
+  --main-font : "pretendard", sans-serif;
   --main-1: #5B9CFF;
   --main-2: #84AFFF;
   --main-3: #A9C7FF;
