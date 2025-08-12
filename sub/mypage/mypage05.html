@@ -24,7 +24,7 @@
    <meta property="og:type" content="website">
    <meta property="og:description" content="소중한 사람을 위한 믿음직한 선택, Lifemind">
   <title>구독권 관리</title>
-  <!--파비콘-->
+    <!--파비콘-->
   <link rel="icon" href="../../images/favicon-life-mind.png">
   <!--폰트-->
   <link rel="stylesheet" href="../../css/font.css">
@@ -32,15 +32,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!--css-->
   <link rel="stylesheet" href="../../css/reset.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
   <link rel="stylesheet" href="../../css/aos.css">
   <link rel="stylesheet" href="../../css/common.css">
   <link rel="stylesheet" href="../../css/layout.css">
   <link rel="stylesheet" href="../../css/mapage.css">
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="../../js/jquery-3.5.1.min.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
   <script src="../../js/aos.js"></script>
   <script src="../../js/layout.js"></script>
   <script src="../../js/mypage.js"></script>
@@ -63,11 +63,11 @@
           <div class="subscription-box-01">
             <h3>등록된 구독권이 없습니다.</h3>
           </div>
-          <button type="button" class="btn-big-01 plus"><img src="../../images/plus-circle-plus-w.svg" alt="플러스">구독권 등록하기</button>
+          <button type="button" class="btn-big-01 plus subscription-plus"><img src="../../images/plus-circle-plus-w.svg" alt="플러스">구독권 등록하기</button>
         </div><!--.subscription-->
 
       </div><!--.inner-->
-      <div class="modal-wrap">
+      <div class="modal-wrap bottom-modal modal-subscription01">
         <div class="modal-box">
           <div class="modal-inner">
             <h4>구독권 번호 입력</h4>
@@ -86,6 +86,32 @@
         </div>
       </div><!--.modal-wrap-->
   
+       <div class="modal-wrap center-modal modal-subscription02">
+        <div class="modal-box">
+          <div class="modal-inner">
+            <div class="icon-box">
+              <img src="../../images/mypage/icon-subscription-ok.svg" alt="구독권">
+            </div>
+            <h5>구독권이 정상적으로 등록되었습니다.</h5>
+            <a href="mypage08.html"><button type="button" class="btn-big-01">확인</button></a>
+            
+          </div><!--.modal-inner-->
+          <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
+        </div>
+      </div><!--.modal-wrap-->
+       <div class="modal-wrap modal-subscription03">
+        <div class="modal-box">
+          <div class="modal-inner">
+            <div class="icon-box">
+              <img src="../../images/mypage/icon-subscription-no.svg" alt="구독권">
+            </div>
+            <h5>유효하지 않은 구독권입니다.</h5>
+            <button type="button" class="btn-big-01">재시도하기</button>
+            
+          </div><!--.modal-inner-->
+          <button type="button" class="btn-close"><img src="../../images/x-black.svg" alt="클로즈"></button>
+        </div>
+      </div><!--.modal-wrap-->
         
     </div><!--.cont-layout-->
 

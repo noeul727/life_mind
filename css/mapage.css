@@ -53,18 +53,18 @@ p4: 14px M
   background-color: var(--bg-color);
 }
 [class^="content-mypage-"] .sec-profile{
-  margin-bottom : 5%;
+  margin-bottom : 20px;
 }
 [class^="content-mypage-"] .sec-profile .profile-sh-b, [class^="content-mypage-"] .sec-profile .profile-ka{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2%;
+  gap: 8px;
   width: 100%;
   height: 120px;
   background-color: var(--main-1);
   margin-top: 12px;
-  padding: 2% 5%;
+  padding: 12px 32px;
   border-radius: 15px;
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-img{
@@ -72,7 +72,7 @@ p4: 14px M
   aspect-ratio: 1 / 1; /* 가로:세로 = 1:1 */
   border-radius: 50%;
   background-color: var(--main-6);
-  padding: 3% 3% 4%;
+  padding: 8px 8px 10px;
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-img img{
   width: 100%;
@@ -80,7 +80,7 @@ p4: 14px M
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info{
   flex: 1;
-  margin-left: 3%;
+  margin-left: 8px;
 }
 [class^="content-mypage-"] .sec-profile [class^="profile-"] .profile-info h3{
   font-size: 2.6rem;
@@ -116,9 +116,11 @@ p4: 14px M
 .f-mypage .gnb-list .f-mypage-ul .bi{
   color: var(--main-1);
 }
+
+
 /*메인*/
 .content-mypage-main ul{
-  margin-top: 5%;
+  margin-top: 20px;
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
@@ -134,37 +136,55 @@ p4: 14px M
   font-size: 1.8rem;
   font-weight: 600;
 }
+
+.center-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-modal .modal-box{
+  width: 360px;
+  border-radius: 20px;
+  padding-top: 40px;
+  height: auto;
+}
+.center-modal .modal-box h5{
+  margin: 20px 0 40px;
+  font-size: 1.8rem;
+}
+
+
 /*체크박스*/
-input[type="radio"]{
+.content-mypage-sub-02 input[type="radio"]{
   appearance: none;
 }
-input[type="radio"] + label::before{
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url(../images/mypage/icon-check-gray.svg) no-repeat center;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 0%;
-} 
-input[type="radio"]:checked + label::before{
-  background: url(../images/mypage/icon-check-blue.svg) no-repeat center;
-}
-input[type="radio"] + label{
+.content-mypage-sub-02 input[type="radio"] + label{
   position: relative;
   padding: 0 28px;
   margin-bottom: 20px;
   cursor: pointer;
-  color: var(--grayscale-5);
-  font-weight: 500;
-  font-size: 1.6rem;
+  background-color: var(--grayscale-5);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 12px 0;
+
+  border-radius: 8px;
 }
-input[type="radio"]:checked + label{
-  color: var(--main-1);
+.content-mypage-sub-02 input[type="radio"]:checked + label{
+  color: var(--white);
+  background-color: var(--main-1);
 }
+.content-mypage-sub-02 .btn-midbox li{
+  flex: 1;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
 /*대상자 수정*/
 .content-mypage-sub-02 .sf02{
   margin: 7%;
@@ -196,12 +216,12 @@ input[type="radio"]:checked + label{
 .content-mypage-sub-02 .field05 .choice-box > div{
   width: 100%;
   gap: 16px;
-  align-items: space-between;
+  align-items: center;
   border: 1px ;
   height: 48px;
   cursor: pointer;
   border-radius: 16px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .content-mypage-sub-02 .field05 .choice-box > div div{
   width: 100%;
@@ -233,17 +253,29 @@ input[type="radio"]:checked + label{
 .content-mypage-sub-02 .btn-midbox .btn-mid-01{
   background-color: var(--grayscale-8);
   color: var(--white);
-  margin-bottom: 20px;
+
 }
-.content-mypage-sub-02 .btn-midbox button{
+.content-mypage-sub-02 .btn-midbox input[type="radio"]{
+  appearance: none;
+}
+.content-mypage-sub-02 .btn-midbox input[type="radio"] + label{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   margin-top: 8px;
 }
-
-
+.profile-re.btn-midbox input[type="radio"] + label {
+  margin-top: 0;
+}
+@media (max-width : 390px){
+  .content-mypage-sub-02 .field05 .choice-box{
+    gap: 8px;
+  }
+  .content-mypage-sub-02 .field05 .choice-box > div div{
+    padding: 0 8px;
+  }
+}
 /*보호자 수정*/
 .guardian .sf02 .profile-sh-y .profile-img{
   background-color: var(--main-5);
@@ -310,7 +342,9 @@ input[type="radio"]:checked + label{
   font-weight: 600;
   margin-bottom: 60px;
 }
-
+.access-02 .modal-box{
+  height: auto;
+}
 /*구독권 확인 창*/
 .subscription03 .modal-wrap{
   display: flex;
@@ -526,23 +560,6 @@ input[type="radio"]:checked + label{
   padding: 16px 0;
 } 
 
-/*등록 확인 창*/
-.registration .modal-wrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.registration .modal-box{
-  width: 360px;
-  border-radius: 20px;
-  padding-top: 40px;
-  height: auto;
-}
-.registration .modal-box h5{
-  margin: 20px 0 40px;
-  font-size: 1.8rem;
-}
-
 
 /*specific-cal*/
 
@@ -569,10 +586,213 @@ input[type="radio"]:checked + label{
   border-radius: 12px;
   padding: 16px 6px;
   background-color: var(--grayscale-9);
-  font-weight: 500;
+  font-weight: 600;
 }
  
 .field07 input[type="checkbox"]:checked + label{
   background-color: var(--main-1);
   color: #fff;
+}
+.registration .alert-set .time-set img{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/*access*/
+.toggle-box{
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+}
+.toggle-left{
+  width: 80%;
+}
+.toggle-left h3{
+  font-size: 1.8rem;
+}
+.toggle-right{
+  width: 20%;
+  text-align: right;
+  padding-right: 12px;
+}
+/* check box - switch */
+.switch{
+  display:inline-block;
+  position:relative;
+  width:40px;
+  height:20px;
+  cursor: pointer;
+}
+.switch input{
+  position:absolute;
+  opacity:0;
+}
+.switch .slider{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#eaeaea;
+  border:3px solid #eaeaea;
+  border-radius:11px;
+  transition:0.4s;
+}
+.switch .slider:before{
+  display:block;
+  content:"";
+  position:absolute;
+  left:1px;
+  top:0;
+  width:14px;
+  height:14px;
+  background-color:#fff;
+  border-radius:50%;
+  box-sizing:border-box;
+  transition:0.4s;
+}
+
+.switch input:checked + .slider{
+  border-color: var(--main-1);
+  background-color:var(--main-1);
+}
+.switch input:checked + .slider:before{
+  border-color: var(--main-1);
+  transform:translateX(19px);
+}
+
+.switch input:disabled + .slider{
+  background:#f5f5f5;
+  border-color:#e2e2e2;
+}
+.switch input:disabled + .slider:before{
+  background:#f5f5f5;
+  border-color:#d5d5d5;
+}
+.switch input:checked:disabled + .slider{
+  background: var(--main-5);
+  border-color:var(--main-5);
+}
+.switch input:checked:disabled + .slider:before{
+  background: var(--main-5);
+  border-color: var(--main-5);
+}
+
+
+/* large-mode 체크 시 모든 toggle-box 스타일 변경 */
+.large-mode:checked ~ ul .toggle-box {
+  padding: 28px 24px;
+}
+
+.large-mode:checked ~ ul .toggle-box .toggle-left h3 {
+  font-size: 2.4rem;
+}
+/* 큰 글씨 모드 켜졌을 때 스위치 크기 확대 */
+.large-mode:checked ~ ul .switch {
+  width: 50px;
+  height: 26px;
+}
+
+.large-mode:checked ~ ul .switch .slider:before {
+  width: 20px;
+  height: 20px;
+  transform: translateX(24px); /* 손잡이 이동 거리 조정 */
+}
+
+.toggle-left p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--grayscale-6);
+  margin: 4px 0;
+}
+.toggle-left h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--grayscale-5);
+}
+.toggle-left button{
+  background-color: transparent;
+  transform: translateY(4px);
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+
+/*고객센터*/
+.cs .inner >div{
+  margin-bottom: 20px;
+}
+.cs ul{
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+.cs .cs-box .cs-left{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.content-mypage-main.cs ul.cs-info{
+  padding: 24px 0;
+}
+.content-mypage-main.cs ul.cs-info li{
+  display: block;
+  text-align: center;
+}
+.content-mypage-main.cs ul.cs-info li h3{
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--grayscale-5);
+}
+.content-mypage-main.cs ul.cs-info li h3 strong{
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--grayscale-2);
+  margin-right: 8px;
+}
+.content-mypage-main.cs ul.cs-info li p{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--grayscale-5);
+  margin: 4px 0 24px;
+}
+.content-mypage-main.cs ul.cs-info li br{
+  display: none;
+}
+.content-mypage-main.cs ul.cs-info li div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20%;
+}
+.content-mypage-main.cs ul.cs-info li div button{
+  width: 100%;
+  height: 48px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 15px;
+  line-height: 48px; /*버튼 높이에 맞게 조정*/
+  background-color: var(--main-5);
+  color: var(--mainfont-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/**/
+@media (max-width : 390px){
+  .content-mypage-main.cs ul.cs-info li br{
+    display: block;
+  }
+  .content-mypage-main.cs ul.cs-info li div{
+    padding: 0 40px;
+    gap: 8px;
+  }
 }

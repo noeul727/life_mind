@@ -25,8 +25,29 @@ $(document).ready(function(){//start
           loop: false,
           direction: 'vertical',
           slidesPerView: 5,
-          initialSlide: 0,
+          initialSlide: 6,
           centeredSlides: true,
       });
   
+  var selSwiperCol2 = new Swiper(".sel01 .swiper-container", {
+      loop: false,
+      direction: 'vertical',
+      slidesPerView: 5,
+      initialSlide: 0,
+      centeredSlides: true,
+  });
+    var selSwiperCol3 = new Swiper(".sel02 .swiper-container", {
+      loop: true,
+      direction: 'vertical',
+      slidesPerView: 5,
+      initialSlide: 0,
+      centeredSlides: true,
+  });
+    var selSwiperCol4 = new Swiper(".sel03 .swiper-container", {
+      loop: true,
+      direction: 'vertical',
+      slidesPerView: 5,
+      initialSlide: 0,
+      centeredSlides: true,
+  });
 });//end
