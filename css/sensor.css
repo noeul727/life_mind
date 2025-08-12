@@ -665,7 +665,6 @@ p4: 14px M
 }
 
 
-
 .sensor-place-wrap{
   position: fixed;
   width: 100%;
@@ -706,17 +705,6 @@ p4: 14px M
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .e-find-a{
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
@@ -746,14 +734,7 @@ p4: 14px M
   bottom: 28px;
   width: 90%;
   position: absolute;
-
 }
-
-
-
-
-
-
 
 
 .sensor-find-a, .sensor-find-b{
