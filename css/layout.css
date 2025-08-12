@@ -150,11 +150,11 @@ input[type="checkbox"] + label{
   margin-bottom: 20px;
   cursor: pointer;
   color: var(--grayscale-5);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.6rem;
 }
 input[type="checkbox"]:checked + label{
-  color: var(--main-1);
+  color: var(--mainfont-color);
 }
 /*아이콘이 있는 인풋*/
 .field02 .input-icon{
