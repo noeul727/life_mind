@@ -136,6 +136,7 @@ p4: 14px M
 }
 .cont-alarm ul li > .inner h2 strong{
   color: var(--mainfont-color);
+  font-weight: 700;
 }
 
 
