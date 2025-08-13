@@ -2,60 +2,65 @@ $(document).ready(function(){//start
   AOS.init();
 
 
-  //modal-wrap 사라짐
-  $(".modal-wrap").hide();
-  
-
   //로그아웃 모달
-  $(".content-mypage-main .my-logout").click(function(){
-    $(".btn-logout").fadeIn();
+  $(".my-logout").click(function(){
+    $(".modal-wrap").css("display","flex");
   });
-  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo, .modal-wrap .modal-box .btn-cancel").click(function(){
+  $(".modal-wrap .btn-close, .modal-wrap .undo, .modal-wrap .btn-cancel").click(function(){
     $(".modal-wrap").fadeOut();
   });
 
 
   //대상자 수정 모달(1940년)
-  $(".content-mypage-sub-02 .field05-left").click(function(){
-    $(".btn-birth").fadeIn();
-  });
+
+   $(".profile-re .field05-left").click(function(){
+    $(".modal-wrap").css("display","flex");
+  });   
+
+
   //구독권 등록 모달
-  $(".subscription-plus").click(function(){
-    $(".modal-subscription01").fadeIn();
-  });
+ $(".subscription-plus").click(function(){
+    $(".modal-subscription01").css("display","flex");
+  });   
+$(".modal-subscription01").click(function(){
+    $(".modal-subscription02").css("display","flex");
+  });  
+
+
   $(".modal-wrap .modal-box .btn-close").click(function(){
     $(".modal-subscription01").fadeOut();
   });
+
+
+
    $(".modal-wrap .subscription-btn").click(function(){
     $(".modal-subscription01").fadeOut();
     $(".modal-subscription02").fadeIn();
   });
 
-  //일정등록 모달
- $(".registration .field05-left").click(function(){
-    $(".btn-year").fadeIn();
-  });
-  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo").click(function(){
-    $(".modal-wrap").fadeOut();
-  });
 
 
- $(".btn-registration").click(function(){
-    $(".registration01").fadeIn();
-  });
-  $(".modal-wrap .modal-box .btn-close, .modal-wrap .undo").click(function(){
-    $(".modal-wrap").fadeOut();
-  });
+//   //일정등록 모달
 
-  //방핵금지모드 모달
- $(".dororok").click(function(){
-    $(".modal-start").fadeIn();
-  });
-  $(".dororok01").click(function(){
+  $(".registration .field05-left").click(function(){
+    $(".modal-year").css("display","flex");
+  });  
+  $(".registration .btn-registration").click(function(){
+    $(".btn-year").fadeOut();
+    $(".registration01").css("display","flex");
+  });  
+
+
+
+
+//   //방핵금지모드 모달
+  $(".dororok").click(function(){
+    $(".modal-start").css("display","flex");
+  });  
+   $(".dororok01").click(function(){
     $(".modal-start").fadeOut();
-    $(".modal-finish").fadeIn();
-  });
-
+    $(".modal-finish").css("display","flex");
+  }); 
 
 
   /*생활 알림 */
