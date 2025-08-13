@@ -2,13 +2,12 @@ $(document).ready(function(){//start
   AOS.init();
 
 
-  // 탭 클릭 이벤트
+  // 탭 메뉴
   $(".tab-list > li").click(function () {
-    // 1. 클릭한 li만 active, 나머지는 제거
+
     $(".tab-list > li").removeClass("active");
     $(this).addClass("active");
 
-    // 2. 탭별 콘텐츠 표시
     if ($(this).is(":nth-child(1)")) {
       $(".report").show();
       $(".sensor").hide();
@@ -18,9 +17,23 @@ $(document).ready(function(){//start
     }
   });
 
-  // 초기 상태: 첫 번째 탭 활성화 & 첫 번째 콘텐츠 표시
   $(".tab-list > li:nth-child(1)").addClass("active");
   $(".report").show();
   $(".sensor").hide();
+
+
+  $(".call-wrap").hide();
+
+  // 긴급전화 버튼 클릭 시
+  $(".alarm-more-btn").click(function () {
+    $(".call-wrap").show();
+    $("body").css("overflow", "hidden"); // 스크롤 비활성화
+  });
+
+  // 취소 클릭 시
+  $(".call-cont > li:nth-child(2)").click(function () {
+    $(".call-wrap").hide();
+    $("body").css("overflow", ""); 
+  });
 
 });//end
