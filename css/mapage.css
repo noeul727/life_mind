@@ -139,21 +139,6 @@ p4: 14px M
   font-weight: 600;
 }
 
-.center-modal{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.center-modal .modal-box{
-  width: 360px;
-  border-radius: 20px;
-  padding-top: 40px;
-  height: auto;
-}
-.center-modal .modal-box h5{
-  margin: 20px 0 40px;
-  font-size: 1.8rem;
-}
 
 
 /*체크박스*/
