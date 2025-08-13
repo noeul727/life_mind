@@ -70,4 +70,159 @@
 
 
 
-/*여기서부터 작성*/
+/* ----여기서부터 작성---- */
+
+/*허브등록*/
+.hubpreparation h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  margin-top: 40px;
+}
+
+.hubregistration-content h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  margin-top: 40px;
+}
+.hubregistration-content02 img{
+  width: 260px;
+  height: auto;
+  margin: 8px 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.hubregistration-content02 span{
+  font-size: 1.4rem;
+  color: var(--grayscale-5);
+  display: block;
+  margin-bottom: 16px;
+}
+.hubregistration-content02 .hub-img01 .pairing{
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.hubregistration-content02 .hub-img02 .pairing{
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.hubregistration-content02 .hub-img02 .description{
+  font-size: 1.4rem;
+  color: var(--grayscale-5);
+  margin-top: 8px;
+}
+
+.connection h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  margin-top: 40px;
+}
+
+/*기기등록*/
+.sensors-preparation h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  margin-top: 20px;
+}
+.sensors-preparation span{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+.sensors-preparation img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sensors-connection h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  margin-top: 40px;
+}
+.sensors-connection .sensors span{
+  font-size: 1.4rem;
+  margin: 10px;
+  display: block;
+  color: var(--grayscale-5);
+}
+.sensors-connection .sensors-img img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.sensors-connection .sensors-img span{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+.ensors-connection .sensors-img{
+  text-align: center;
+}
+
+.sensors-installation h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  margin-top: 40px;
+}
+.sensors-installation img{
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+.sensors-installation-img span{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+.opensensor-ready h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+}
+.opensensor-ready span{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+.opensensor-connection span{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+.opensensor-connection-img span{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.opensensor-installation h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--grayscale-2);
+  margin-top: 40px;
+}
+.opensensor-installation img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.opensensor-installation-img{
+  margin-top: 30px;
+}
