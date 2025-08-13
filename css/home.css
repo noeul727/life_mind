@@ -259,6 +259,10 @@ p4: 14px M
   font-weight: 500;
 }
 
+.report-cont {
+  margin-bottom: 60px;
+}
+
 .report-cont > li{
   background-color: #ffffff;
   padding: 20px 20px 8px 20px;
