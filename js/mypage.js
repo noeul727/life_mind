@@ -99,8 +99,8 @@ $(document).ready(function(){//start
       */
      $(".registration .registration-menu li").click(function(){
       $(this).addClass("active").siblings().removeClass("active");
-      let aa = $(this).index();
-      $(".registration .registration-content-list > li").eq(aa).show().siblings().hide();
+      let cc = $(this).index();
+      $(".registration .registration-content-list > li").eq(cc).show().siblings().hide();
      });
 
 
@@ -115,17 +115,20 @@ $(document).ready(function(){//start
     });
 
 
-     //토글 버튼 방해 금지 모드
-     $(".toggle-left p, .toggle-left h4").hide();
-     $(".toggle-right .switch input").change(function(){
-      if($(this).is(":checked")){
-        $(".toggle-left p, .toggle-left h4").show();
-      }else{
-        $(".toggle-left p, .toggle-left h4").hide();
-      }
-     });
 
-     
+       $(".user-guide-cont ul li").not(":first").hide();
+ 
+
+  //#brand .tab-con ul li 클릭하면
+  $(".tab-menu div").click(function(){
+    //1.선택한 li만 active가 붙고 나머지는 active지워져야함
+    $(this).addClass("active").siblings().removeClass("active");
+    //2.선택한 li의 순번을 담을 변수 생성
+    let bb = $(this).index();
+    //3.#brand .tab-con ul li중 순번과 동일한 요소만 보여주고 나머지는 숨겨야함
+    $(".user-guide-cont ul li").eq(bb).fadeIn().siblings().hide();
+
+  });
 
 
 });//end
