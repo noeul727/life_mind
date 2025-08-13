@@ -24,7 +24,7 @@
 }
 
 
-/*공통*/
+/*공통*/ 
 /*
 h2: 25px SB
 h3: 22px SB
@@ -679,7 +679,7 @@ p4: 14px M
   background-color:#fff;
   border-radius:50%;
   box-sizing:border-box;
-  transition:0.4s;
+  /*transition:0.4s;*/
 }
 
 .switch input:checked + .slider{
