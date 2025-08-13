@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+*{-webkit-tap-highlight-color: transparent;}
 :root {
   --main-font: "pretendard", sans-serif;
   --main-1: #5B9CFF;
@@ -410,7 +410,6 @@ p4: 14px M
   width: 100%;
   position: fixed;
   bottom: 0;
-
 }
 
 .sensor-search-keyboard img{
@@ -798,3 +797,9 @@ p4: 14px M
   color: var(--grayscale-2);
 }
 
+
+
+/* none 처리 */
+.sensor-search-keyboard, .sensor02-keyboard-place, .sensor-find, .sensor-wifi,  .sensor-find-a, .sensor-find-b, .sensor-place-wrap {
+  display: none;
+}
