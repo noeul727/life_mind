@@ -77,12 +77,19 @@
 .hubconnections-img img{
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+.hubconnections-img img:first-child{
+  margin-top: 10px;
 }
 
 /*기기등록*/
 .deviceregistration-img img{
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+.deviceregistration-img img:first-child{
+  margin-top: 10px;
 }
