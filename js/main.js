@@ -22,11 +22,11 @@ $(document).ready(function(){//start
   $(".sensor").hide();
 
 
-  $(".call-wrap").hide();
+  //$(".call-wrap").hide();
 
   // 긴급전화 버튼 클릭 시
   $(".alarm-more-btn").click(function () {
-    $(".call-wrap").show();
+    $(".call-wrap").css("display","block");
     $("body").css("overflow", "hidden"); // 스크롤 비활성화
   });
 

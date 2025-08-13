@@ -747,6 +747,7 @@
 /* calendar-modal */
 
 .calendar-wrap{
+  display: none;
   z-index: 999;
   position: fixed;
   top: 0;

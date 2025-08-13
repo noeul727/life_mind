@@ -1,9 +1,9 @@
 $(document).ready(function(){//start
 
-  $(".calendar-wrap").hide();
+  //$(".calendar-wrap").hide();
 
   $(".calendar-btn").click(function(){
-    $(".calendar-wrap").show();
+    $(".calendar-wrap").css("display","flex");
   });
 
   $(".calendar-wrap .calendar-modal .calendar-day > li p").removeClass("active");
