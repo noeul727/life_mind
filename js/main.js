@@ -23,7 +23,10 @@ $(document).ready(function(){//start
 
 
   //$(".call-wrap").hide();
-
+  $(".home .graph-box .graph ul li:nth-child(5)").click(function () {
+    $(".home .graph-box .graphimg1, .home .graph-box .graphimg2").css("display","block");
+  
+  });
   // 긴급전화 버튼 클릭 시
   $(".alarm-more-btn").click(function () {
     $(".call-wrap").css("display","block");

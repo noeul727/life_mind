@@ -1,27 +1,33 @@
 @charset "utf-8";
-*{-webkit-tap-highlight-color: transparent;}
-:root{
-  --main-font : "pretendard", sans-serif;
-  --main-1 : #5B9CFF;
-  --main-2 : #84AFFF;
-  --main-3 : #A9C7FF;
-  --main-4 : #CEE2FF;
-  --main-5 : #E0EBFF;
-  --main-6 : #EFF8FF;
-  --grayscale-1 : #101010;
-  --grayscale-2 : #252525;
-  --grayscale-3 : #454545;
-  --grayscale-4 : #5D5F62;
-  --grayscale-5 : #83878B;
-  --grayscale-6 : #9CA2A8;
-  --grayscale-7 : #BAC0C5;
-  --grayscale-8 : #D5D9DD;
-  --grayscale-9 : #E5EAEF;
-  --grayscale-10 : #F0F3F6;
-  --white : #fff;
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+:root {
+  --main-font: "pretendard", sans-serif;
+  --main-1: #5b9cff;
+  --main-2: #84afff;
+  --main-3: #a9c7ff;
+  --main-4: #cee2ff;
+  --main-5: #e0ebff;
+  --main-6: #eff8ff;
+  --grayscale-1: #101010;
+  --grayscale-2: #252525;
+  --grayscale-3: #454545;
+  --grayscale-4: #5d5f62;
+  --grayscale-5: #83878b;
+  --grayscale-6: #9ca2a8;
+  --grayscale-7: #bac0c5;
+  --grayscale-8: #d5d9dd;
+  --grayscale-9: #e5eaef;
+  --grayscale-10: #f0f3f6;
+  --white: #fff;
   --mainfont-color: #2079ff;
-  --bg-color : #F6FAFD;
-  --main-gradi : linear-gradient(90deg,rgba(124, 176, 255, 1) 0%, rgba(87, 154, 255, 1) 100%);
+  --bg-color: #f6fafd;
+  --main-gradi: linear-gradient(
+    90deg,
+    rgba(124, 176, 255, 1) 0%,
+    rgba(87, 154, 255, 1) 100%
+  );
 }
 
 .head1 .inner {
@@ -64,32 +70,63 @@
   border-bottom-color: var(--main-1);
   color: var(--grayscale-2);
 }
-.user-guide-wrap{
+.user-guide-wrap {
   padding-top: 60px;
 }
-
-
-
 
 /* ----여기서부터 작성---- */
 
 /*허브등록*/
-.hubconnections-img img{
-  width: 100%;
-  height: auto;
-  margin-top: 60px;
+.user-guide-cont ul li {
+  margin-bottom: 32px;
 }
-.hubconnections-img img:first-child{
-  margin-top: 10px;
+.user-guide-wrap h4 {
+  font-size: 1.6rem !important;
+  font-weight: 600;
+  color: var(--mainfont-color);
+  margin: 16px 0 8px;
+}
+.user-guide-wrap .cont-box {
+  margin-bottom: 60px;
+}
+.user-guide-wrap .cont-box h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 2rem;
+}
+.user-guide-wrap .cont-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
 }
 
-/*기기등록*/
-.deviceregistration-img img{
+.user-guide-wrap .cont-img img{
   width: 100%;
-  height: auto;
-  margin-top: 60px;
+  height: 100%;
+  object-fit: contain;
+}
+.svgimg{
+  width: 160px !important;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 20px;
+}
+.svgimg2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.deviceregistration-img img:first-child{
-  margin-top: 10px;
+
+.user-guide-wrap .cont-text dl{
+  display: flex;
+  gap: 6px;
+  margin: 8px 4px;
+}
+.user-guide-wrap .cont-text dl dt, .user-guide-wrap .cont-text dl dd{
+  font-size: 1.6rem;
+  font-weight: 500;
 }

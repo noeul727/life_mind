@@ -194,10 +194,10 @@ p4: 14px M
 .home .graph-box .graph ul li:nth-child(2){height:52px; background-color: #C7DAFF;}
 .home .graph-box .graph ul li:nth-child(3){height: 74px; background-color: #A9C7FF;}
 .home .graph-box .graph ul li:nth-child(4){height: 108px; background-color: #84AFFF;}
-.home .graph-box .graph ul li:nth-child(5){height: 68px; background-color: #C7DAFF;}
+.home .graph-box .graph ul li:nth-child(5){height: 68px; background-color: #C7DAFF; cursor: pointer;}
 
 .home .graph-date{margin: 10px 0 20px; font-size: 12px; color: #9CA2A8; text-align: center;}
-.home .graph-date ul{display: flex; justify-content: center; gap: 28px; align-items: end; width: 100%;}
+.home .graph-date ul{display: flex; justify-content: center;  gap: 28px; align-items: center; width: 100%;}
 .home .graph-date ul li{width: 10%;}
 .home .graph-date ul li span{display: inline-block; padding: 2px 10px; background-color: var(--white); border: 1px solid #5B9CFF; border-radius: 20px; color: #5B9CFF; font-weight: 600; white-space: nowrap;
 }
@@ -210,22 +210,19 @@ p4: 14px M
   align-items: center;
 }
 
-.home .graph-box .graph ul::before{
-  content: "";
-  display: block;
+
+.home .graph-box .graphimg1{
+  display: none;
   width: 58px;
   height: 38px;
-  background: url(../images/home/graph_score.png) no-repeat center;
   position: absolute;
-  bottom: 76px;
-  right: 20px;
+  top: 15px;
+  right: 40px;
 }
-
-.home .graph-box .graph ul::after{
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
+.home .graph-box .graphimg2{
+  display: none;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   border: 2px solid #ffffff;
   background-color: var(--main-1);
