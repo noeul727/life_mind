@@ -87,7 +87,7 @@
   margin: 16px 0 8px;
 }
 .user-guide-wrap .cont-box {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .user-guide-wrap .cont-box h3 {
   display: inline-flex;
@@ -120,8 +120,13 @@
   justify-content: center;
 }
 
-.user-guide-wrap .cont-text p {
-  font-size: 1.6rem;
+
+.user-guide-wrap .cont-text dl{
+  display: flex;
+  gap: 6px;
   margin: 8px 4px;
+}
+.user-guide-wrap .cont-text dl dt, .user-guide-wrap .cont-text dl dd{
+  font-size: 1.6rem;
   font-weight: 500;
 }
