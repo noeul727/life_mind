@@ -46,7 +46,7 @@ p4: 14px M
   color: var(--main-1);
 }
 .gnb-list > div:first-child ul li:last-child {
-  color: var(--grayscale-4);
+  color: var(--main-1);
 }
 
 /* 타이틀 탭 */
