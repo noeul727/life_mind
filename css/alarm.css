@@ -514,7 +514,7 @@ p4: 14px M
 .alarm-fall-null h2{
    font-size: 1.8rem;
    font-weight: 600;
-   color: var(--grayscale-3);
+   color: #455e80;
    margin-bottom: 80px;
    opacity: 0.4;
 }
